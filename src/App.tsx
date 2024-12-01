@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import { Navigation } from './ui/navigation/Navigation';
+import { Title } from './ui/sections/title/Title';
+import { Location } from './ui/sections/location/Location';
+import { Faq } from './ui/sections/faq/Faq';
 
 function App() {
+  const [theme, setTheme] = useState<string>("pantone"); // Default theme
+
+  const handleThemeChange = (newTheme: string) => {
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme); // Set data-theme on <html>
+  };
+
+  useEffect(() => {
+    handleThemeChange("pantone")
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ background: 'base-100' }}>
+      <div className="flex flex-col">
+        <Navigation />
+        <Title />
+        <Location />
+        <Faq />
+      </div>
     </div>
   );
 }

@@ -13,6 +13,14 @@
   }
 }
 
+body {
+  font-family: "The Nautigal", cursive;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #f6efe5;
+  color: #8a6551;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
