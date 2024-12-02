@@ -11,22 +11,13 @@ export const Navigation = () => {
     };
 
     return <nav className="navbar bg-secondary">
-        <div className="navbar-start">
-            <div className="btn btn-ghost nav-button"
-                style={{ fontWeight: 'bold', fontSize: '40px' }}
-                onClick={() => scrollToSection("title")}>
-                Dorota i Szymon
-            </div>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1" style={{flex: 1, justifyContent: 'center'}}>
                 <li className="nav-button" onClick={() => scrollToSection("location")}>
-                    Location
+                    <div>Location</div>
                 </li>
                 <li className="nav-button" onClick={() => scrollToSection("faq")}>
-                    FAQ
+                    <div>FAQ</div>
                 </li>
             </ul>
-        </div>
     </nav>
 }

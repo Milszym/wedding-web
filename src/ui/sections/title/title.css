@@ -1,0 +1,5 @@
+.titleImage {
+    width: 100%; /* Makes the image fit the parent's width */
+    height: 100vh;
+    object-fit:fill;
+  }
