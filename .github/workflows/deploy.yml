@@ -1,0 +1,36 @@
+name: Build and Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 23
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build React App
+      run: npm run build
+
+    - name: List files
+      run: ls
+
+    - name: Deploy to FTP server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_HOST }}  # Replace with your FTP server
+        username: ${{ secrets.FTP_USERNAME }} # Set this in GitHub Secrets
+        password: ${{ secrets.FTP_PASSWORD }} # Set this in GitHub Secrets
+        local-dir: ./build/ # Directory to upload (output of npm run build)
+        server-dir: ./wedd/ # Destination folder on the FTP server
