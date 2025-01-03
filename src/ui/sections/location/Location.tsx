@@ -1,6 +1,7 @@
 export const Location = () => {
     return <section
         id="location"
+        style={{backgroundColor: '#edcdb9'}}
         className="h-screen w-full flex flex-col items-center justify-center"
     >
         <h2 className="text-3xl font-bold mb-4">Our Location</h2>

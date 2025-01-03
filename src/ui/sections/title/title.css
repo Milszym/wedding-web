@@ -1,5 +1,25 @@
-.titleImage {
-    width: 100%; /* Makes the image fit the parent's width */
-    height: 100vh;
-    object-fit:fill;
-  }
+.title {
+  font-size: 4em;
+}
+.titleDescription {
+  font-size: 2em;
+}
+
+.titleSection {
+  background-image: url('/public/images/zielona_brama.jpg');
+  opacity: 0.5;
+}
+
+.titleOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: '#f9a269'; 
+  z-index: 1;
+}
+
+.titleContent {
+  z-index: 2; 
+}

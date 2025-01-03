@@ -5,6 +5,8 @@ import { Title } from './ui/sections/title/Title';
 import { Location } from './ui/sections/location/Location';
 import { Faq } from './ui/sections/faq/Faq';
 
+export const MARRIAGE_DATE: Date = new Date(2025, 6, 12, 16, 30, 0, 0)
+
 function App() {
   
   const handleThemeChange = (newTheme: string) => {
@@ -16,9 +18,9 @@ function App() {
   }, [])
 
   return (
-    <div className="App" style={{ background: 'base-100' }}>
+    <div className="App">
       <div className="flex flex-col">
-        <Navigation />
+        {/* <Navigation /> */}
         <Title />
         <Location />
         <Faq />

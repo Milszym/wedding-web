@@ -4,7 +4,6 @@ import "./faq.css"
 export const Faq = () => {
     return <section
         id="faq"
-        style={{ backgroundColor: '#edcdb9' }}
         className="w-full py-16 flex flex-col items-center"
     >
         <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
