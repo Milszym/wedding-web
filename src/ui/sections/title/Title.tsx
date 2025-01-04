@@ -1,13 +1,16 @@
 import "./title.css"
 import { Countdown } from "./Countdown"
 import { MARRIAGE_DATE } from "../../../App"
+import { isMobile } from "../../../util/isMobile"
 
 export const Title = () => {
 
-    return <section id="title" className="relative w-full h-screen titleSection">
-        <img className="titleBg" src="/images/zareczyny_cropped.jpg" />
+    const imagePath = isMobile() ? '/images/zdjecie_z_wesela_cropped.jpg' : '/images/zareczyny_cropped.jpg'
+
+    return <section id="title" className="w-full h-screen titleSection">
+        <img className="titleBg" src={imagePath} />
         <div className="titleOverlay" />
-        <div className="absolute inset-0 flex items-center justify-center titleContent">
+        <div className="titleContent">
             <div>
                 <h1 className="title">Dorota i Szymon</h1>
                 <br />
@@ -17,10 +20,13 @@ export const Title = () => {
                 <div className="titleHour">
                     16:30
                 </div>
-                <div className="titleCountdown">
+                {!isMobile() && <div className="titleCountdown">
                     <Countdown targetDate={MARRIAGE_DATE} />
-                </div>
+                </div>}
             </div>
+            {isMobile() && <div className="titleCountdown">
+                <Countdown targetDate={MARRIAGE_DATE} />
+            </div>}
         </div>
     </section>
 }
