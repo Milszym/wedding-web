@@ -33,4 +33,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }} # Set this in GitHub Secrets
         password: ${{ secrets.FTP_PASSWORD }} # Set this in GitHub Secrets
         local-dir: ./build/ # Directory to upload (output of npm run build)
-        server-dir: ./wedd/ # Destination folder on the FTP server
+        server-dir: ./ # Destination folder on the FTP server
