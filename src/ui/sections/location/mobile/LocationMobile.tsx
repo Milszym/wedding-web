@@ -9,7 +9,6 @@ export const LocationMobile = () => {
         className="h-screen w-full locationMobileContent">
         <div className="locationMobileText">
             <div className="locationMobileTitle">{LOCATION_TITLE}</div><br />
-            <div className="locationMobileSubtitle">{LOCATION_SUBTITLE}</div>
             <div className="locationMobileDescription">{LOCATION_DESCRIPTION}</div>
              <div className="locationMobileMapButton">
                 <PeachButton text="Zobacz na mapie" onClick={navigateToMap} />

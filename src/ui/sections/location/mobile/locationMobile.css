@@ -34,6 +34,7 @@
 .locationMobileMapImage {
     width: 40vw;
     right: -10vw;
+    display: none;
     position: absolute;
     top: 6vh;
     aspect-ratio: 1;
