@@ -9,7 +9,7 @@
 
 .locationMobileText {
     flex: 1;
-    margin-top: 5em;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
