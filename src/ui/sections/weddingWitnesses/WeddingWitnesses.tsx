@@ -6,7 +6,7 @@ export const WeddingWitnesses = () => {
     return <section
         id="weddingWitnesses"
         className="h-screen w-full flex flex-col items-center justify-center weddingWitnesses">
-        <div className="weddingWitnessesTitle">Świadkowa   &   Świadek</div>
+        <div className="weddingWitnessesTitle">Świadkowie</div>
         <div className="weddingWitnessesDescription">Nie ma wesele bez świadków, a więc mamy zaszczyt przedstawić Wam te wyjątkowe osoby.</div>
         <div className="weddingWitnessesContent">
             <div className="firstWitness">
