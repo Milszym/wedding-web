@@ -3,7 +3,7 @@ module.exports = {
     themes: [
       {
         pantone: {
-          "primary": "#f2e2d6",   
+          "primary": "#daaa98",   
           "secondary": "#d8a685", 
           "accent": "#0061A8",    // Pantone 286 (Vibrant Blue)
           "neutral": "#A7B6C2",   // Pantone 7542 (Cool Light Gray)

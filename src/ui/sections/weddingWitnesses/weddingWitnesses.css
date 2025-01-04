@@ -1,0 +1,60 @@
+.weddingWitnesses {
+    background-image: url('/public/images/peach_background_50.jpg');
+}
+
+.weddingWitnessesTitle {
+    font-size: 5em;
+}
+
+.weddingWitnessesDescription {
+    font-size: 1.5em;
+    font-family: Cormorant;
+    color: black;
+    margin-bottom: 2em;
+}
+
+.weddingWitnessesContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100vw;
+}
+
+.secondWitness {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.witnessImage {
+    height: 40vh;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 8px #daaa98;
+}
+
+.witnessText {
+    font-size: 2em;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .weddingWitnessesTitle {
+        margin-top: 1.5em;
+        font-size: 3em;
+    }
+
+    .weddingWitnessesDescription {
+        margin: 0 1em 1em 1em;
+        font-size: 1em;
+    }
+
+    .witnessImage {
+        height: 40vw;
+        aspect-ratio: 1;
+        margin-top: 1em;
+    }
+}

@@ -1,14 +1,27 @@
+import { isMobile } from "../../../util/isMobile"
+import { LocationDesktop } from "./desktop/LocationDesktop"
+import { LocationMobile } from "./mobile/LocationMobile"
+
+const MAP_URL = 'https://maps.app.goo.gl/TCPSt38Gr9c77hmf9'
+const ZIELONA_BRAMA_URL = 'https://zielonabrama.com.pl/'
+
 export const Location = () => {
-    return <section
-        id="location"
-        style={{backgroundColor: '#edcdb9'}}
-        className="h-screen w-full flex flex-col items-center justify-center"
-    >
-        <h2 className="text-3xl font-bold mb-4">Our Location</h2>
-        <p className="text-lg text-center max-w-2xl">
-            We are located in the heart of the city, surrounded by scenic
-            landscapes and vibrant urban life. Visit us at 123 Main Street, Your
-            City.
-        </p>
-    </section>
+
+    return isMobile() ? <LocationMobile /> : <LocationDesktop />
 }
+
+export const navigateToMap = () => {
+    window.open(MAP_URL, '_blank')?.focus();
+}
+
+export const navigateToZielonaBrama = () => {
+    window.open(ZIELONA_BRAMA_URL, '_blank')?.focus();
+}
+
+export const LOCATION_TITLE = 'Przywidz, Zielona Brama'
+export const LOCATION_SUBTITLE = 'Sala Sopocka'
+export const LOCATION_DESCRIPTION = <>
+    Nasza ceremonia zaślubin odbędzie się pod chmurką, tuż obok sali weselnej.
+    <br /><br />
+    Po ceremonii serdecznie zapraszamy Was na przyjęcie weselne, które odbędzie się w Sali Sopockiej tuż obok! 🥂🎶
+</>

@@ -1,0 +1,62 @@
+.locationMobileContent {
+    background-image: url('/public/images/peach_background_50.jpg');
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.locationMobileText {
+    flex: 1;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.locationMobileImages {
+    flex: 1;
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+}
+
+.locationMobileMainImage {
+    aspect-ratio: 1;
+    width: 100vw;
+    object-fit: cover;
+    margin-top: 7vh;
+    cursor: pointer;
+}
+
+.locationMobileMapImage {
+    width: 40vw;
+    right: -10vw;
+    position: absolute;
+    top: 6vh;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.locationMobileMapButton {
+    margin-top: 2em;
+}
+
+.locationMobileTitle {
+    font-size: 3em;
+}
+
+.locationMobileSubtitle {
+    font-size: 1.5em;
+    margin-top: -.7em;
+}
+
+.locationMobileDescription {
+    font-size: 1em;
+    color: black;
+    margin: 1em 3em 1em 3em;
+    font-family: Cormorant;
+    font-weight: 300;
+}

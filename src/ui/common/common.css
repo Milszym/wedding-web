@@ -1,0 +1,23 @@
+.peachButton {
+    color: #fff;
+    background-color: #daaa98;
+    font-family: Cormorant;
+    border: 0px;
+    font-size: 2em;
+    font-weight:200;
+    padding: .5em 1.5em;
+    line-height: auto;
+    height: auto;
+    border-color: #ddc5bd;
+    border-radius: 25em;
+}
+
+.peachButton:hover {
+    background-color: #d0846b;
+}
+
+@media (max-width: 768px) {
+    .peachButton {
+        font-size: 1.5em;
+    }
+}

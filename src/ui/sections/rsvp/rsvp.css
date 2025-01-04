@@ -1,0 +1,86 @@
+.rsvpContent {
+    display: flex;
+    background-image: url('/public/images/peach_background_50.jpg');
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.rsvpTitle {
+    font-size: 5em;
+}
+
+.rsvpDescription {
+    font-size: 1.7em;
+    width: 65%;
+    font-family: Cormorant;
+    font-weight: 200;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.rsvpInputs {
+    width: 30vw;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.rsvpInputText {
+    width: 100%;
+    font-family: Cormorant;
+    font-size: 1.6em;
+}
+
+.rsvpButton {
+    margin-top: 2em;
+}
+
+.rsvpOurContacts {
+    display: flex;
+    width: 40vw;
+    margin-top: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rsvpOurContact {
+    font-family: Cormorant;
+    font-weight: 200;
+    font-size: 1.7em;
+    color: black;
+}
+
+.rsvpPhone {
+    color: #daaa98;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .rsvpTitle {
+        font-size: 3em;
+    }
+
+    .rsvpDescription {
+        font-size: 1.3em;
+        width: 85%;
+    }
+
+    .rsvpInputs {
+        width: 70vw;
+    }
+
+    .rsvpOurContacts {
+        width: 80vw;
+    }
+
+    .rsvpOurContact {
+        font-size: 1.5em;
+    }
+}

@@ -1,25 +1,63 @@
 .title {
-  font-size: 4em;
-}
-.titleDescription {
-  font-size: 2em;
+  font-size: 8em;
+  color: #DAAA98;
+  margin-top: 2em;
 }
 
-.titleSection {
-  background-image: url('/public/images/zielona_brama.jpg');
-  opacity: 0.5;
+.titleDate {
+  font-size: 5em;
+  color: #fff;
+  margin-top: -.5em;
+}
+
+.titleHour {
+  font-size: 2.5em;
+  color: #fff;
+  margin-top: -.5em;
+  margin-bottom: 1em;
+}
+
+.titleContent {
+  font-weight: 200;
+}
+
+.titleBg {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 1;
 }
 
 .titleOverlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: '#f9a269'; 
-  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 60%;
+  background-color: #000;
+  z-index: 2;
 }
 
 .titleContent {
-  z-index: 2; 
+  z-index: 3;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4em;
+  }
+
+  .titleDate {
+    font-size: 2em;
+  }
+
+  .titleHour {
+    font-size: 1em;
+  }
 }

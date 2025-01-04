@@ -31,26 +31,26 @@ export const Countdown = (props: CountdownProps) => {
   }, [props.targetDate]);
 
   if (!timeLeft) {
-    return <div>The countdown has ended!</div>;
+    return <div>Dziękujemy za spędzenie z nami tego wyjątkowego dnia!</div>;
   }
 
-  return <div className="grid auto-cols-max grid-flow-col gap-5 text-center">
-    <div className="text-neutral-content flex flex-col p-2">
+  return <div className="flex items-center justify-center grid auto-cols-max grid-flow-col gap-5 text-center">
+    <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.days}<br/>days
       </span>
     </div>
-    <div className="text-neutral-content flex flex-col p-2">
+    <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.hours}<br/>hours
       </span>
     </div>
-    <div className="text-neutral-content flex flex-col p-2">
+    <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.minutes}<br/>mins
       </span>
     </div>
-    <div className="text-neutral-content flex flex-col p-2">
+    <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.seconds}<br/>secs
       </span>
