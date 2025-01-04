@@ -33,7 +33,7 @@
     height: 40vh;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: solid 8px #daaa98;
+    border: solid 4px #daaa98;
 }
 
 .witnessText {
@@ -54,7 +54,7 @@
 
     .weddingWitnessesTitle {
         margin-top: 7vh;
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
     .weddingWitnessesDescription {

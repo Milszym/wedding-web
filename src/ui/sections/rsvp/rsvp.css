@@ -69,6 +69,7 @@
 
     .rsvpTitle {
         font-size: 3em;
+        margin-top: 7vh;
     }
 
     .rsvpDescription {
@@ -81,6 +82,7 @@
     }
 
     .rsvpOurContacts {
+        margin-bottom: 2em;
         justify-content: space-evenly;
         width: 90vw;
     }
