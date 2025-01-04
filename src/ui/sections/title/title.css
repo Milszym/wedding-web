@@ -13,7 +13,7 @@
 .titleHour {
   font-size: 2.5em;
   color: #fff;
-  margin-top: -.5em;
+  margin-top: -.2em;
   margin-bottom: 1em;
 }
 
@@ -48,9 +48,18 @@
   color: #fff;
 }
 
+.titleCountdown {
+  margin-top: 2em;
+}
+
+.countdownLabel {
+  font-size: 2em;
+}
+
 @media (max-width: 768px) {
   .title {
-    font-size: 4em;
+    font-size: 3.5em;
+    margin-top: 4em;
   }
 
   .titleDate {
@@ -58,6 +67,10 @@
   }
 
   .titleHour {
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+
+  .countdownLabel {
+    font-size: 1.5em;
   }
 }

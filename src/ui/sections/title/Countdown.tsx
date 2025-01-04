@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./title.css"
 
 interface CountdownProps {
   targetDate: Date
@@ -37,23 +38,31 @@ export const Countdown = (props: CountdownProps) => {
   return <div className="flex items-center justify-center grid auto-cols-max grid-flow-col gap-5 text-center">
     <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
-        {timeLeft.days}<br/>days
+        {timeLeft.days}<br/>
       </span>
+      <br/>
+      <span className="countdownLabel">dni</span>
     </div>
     <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
-        {timeLeft.hours}<br/>hours
+        {timeLeft.hours}
       </span>
+      <br/>
+      <span className="countdownLabel">godz</span>
     </div>
     <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
-        {timeLeft.minutes}<br/>mins
+        {timeLeft.minutes}<br/>
       </span>
+      <br/>
+      <span className="countdownLabel">min</span>
     </div>
     <div className="flex flex-col p-2">
       <span className="countdown text-5xl">
-        {timeLeft.seconds}<br/>secs
+        {timeLeft.seconds}<br/>
       </span>
+      <br/>
+      <span className="countdownLabel">sek</span>
     </div>
   </div>
 }
