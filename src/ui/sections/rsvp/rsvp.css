@@ -63,6 +63,10 @@
 }
 
 @media(max-width: 768px) {
+    .rsvpContent {
+        background-image: url('/public/images/peach_background_30.png');
+    }
+
     .rsvpTitle {
         font-size: 3em;
     }

@@ -42,6 +42,10 @@
 }
 
 @media (max-width: 768px) {
+    .weddingWitnesses {
+        background-image: url('/public/images/peach_background_30.png');
+    }
+
     .weddingWitnessesContent {
         flex-direction: column;
         justify-content: center;
