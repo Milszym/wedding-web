@@ -9,7 +9,7 @@
 
 .locationMobileText {
     flex: 1;
-    margin-top: 2em;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -45,7 +45,7 @@
 }
 
 .locationMobileTitle {
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 .locationMobileSubtitle {

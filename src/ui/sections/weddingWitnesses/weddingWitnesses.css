@@ -58,8 +58,8 @@
     }
 
     .witnessImage {
-        height: 40vw;
+        height: 55vw;
         aspect-ratio: 1;
-        margin-top: 1em;
+        margin-top: 2em;
     }
 }

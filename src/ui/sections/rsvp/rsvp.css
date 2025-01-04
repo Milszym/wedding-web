@@ -77,10 +77,11 @@
     }
 
     .rsvpOurContacts {
-        width: 80vw;
+        justify-content: space-evenly;
+        width: 90vw;
     }
 
     .rsvpOurContact {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
