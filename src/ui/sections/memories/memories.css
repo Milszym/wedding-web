@@ -10,8 +10,8 @@
 }
 
 .memoriesText {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-items: center;
     align-items: center;
@@ -40,4 +40,43 @@
     border-radius: 50%;
     border: solid 4px #daaa98;
     aspect-ratio: 1;
+}
+
+@media (max-width: 768px) {
+    .memoriesContent {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .memoriesText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .memoriesImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .memoriesTitle {
+        font-size: 3em;
+    }
+
+    .memoriesDescription {
+        margin: 0 1em 1em 1em;
+        font-size: 1em;
+    }
+
+    .memoriesImage {
+        height: 80vw;
+        margin-bottom: 2em;
+        aspect-ratio: 1;
+        margin-top: 1em;
+    }
 }
