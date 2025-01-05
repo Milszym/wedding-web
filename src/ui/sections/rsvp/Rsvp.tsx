@@ -8,7 +8,7 @@ export const Rsvp = () => {
     }
 
     return <section
-        id="memories"
+        id="rsvp"
         className="h-screen w-full rsvpContent">
         <div className="rsvpTitle">RSVP</div><br />
         <div className="rsvpDescription">

@@ -1,7 +1,106 @@
-.collapse-title {
-    font-size: 2em;
+.faqContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
 }
 
-.collapse-content {
-    font-size: 1.5em;
+.faqTitle {
+    font-size: clamp(1rem, 5vw, 9rem);
+}
+
+.faqSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.faqSection {
+    color: black;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    margin: 1em;
+    font-family: Cormorant;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+
+.faqSelectedSection {
+    color: #daaa98;
+    font-weight: 500;
+    border-bottom: solid 2px #daaa98;
+}
+
+.faqItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.faqItem {
+    width: 25vw;
+    border-radius: 32px;
+    border: 2px solid #daaa98;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faqItemTitle {
+    font-size: clamp(1rem, 1.8vw, 6rem);
+    font-weight: 200;
+}
+
+.faqItemDescription {
+    font-size: clamp(1rem, 1.3vw, 6rem);
+    font-family: Cormorant;
+    font-weight: 200;
+    color: black;
+}
+
+@media(max-width: 768px) {
+    .faqContent {
+        background-image: url('/public/images/peach_background_30.png');
+    }
+
+    .faqTitle {
+        font-size: clamp(1rem, 10vw, 9rem);
+        margin-top: 7vh;
+    }
+
+    .faqSection {
+        font-size: clamp(1rem, 6vw, 2.5rem);
+    }
+
+    .faqMobileItems {
+        width: 100%;
+    }
+
+    .faqItemWrapper {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .faqItem {
+        width: 80vw;
+        margin: 16px;
+    }
+
+    .faqItemTitle {
+        font-size: clamp(1rem, 6vw, 2.5rem);
+    }
+
+    .faqItemDescription {
+        font-size: clamp(1rem, 5vw, 2.5rem);
+    }
 }

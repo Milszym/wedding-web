@@ -26,7 +26,7 @@ function App() {
         {/* <Navigation /> */}
         <Title />
         <Location />
-        {/* <Faq /> */}
+        <Faq />
         <WeddingWitnesses />
         <Memories />
         <Rsvp />
