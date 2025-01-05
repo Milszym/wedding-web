@@ -88,10 +88,12 @@
 
   .titleDate {
     font-size: 2em;
+    cursor: pointer;
   }
 
   .titleHour {
     font-size: 1.5em;
+    cursor: pointer;
   }
 
   .titleCountdown {
