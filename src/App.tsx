@@ -9,13 +9,14 @@ import { Memories } from './ui/sections/memories/Memories';
 import { Rsvp } from './ui/sections/rsvp/Rsvp';
 import { Toaster } from 'react-hot-toast';
 import emailjs from "emailjs-com";
+import { WeddingWitnessesKuba } from './ui/sections/weddingWitnesses/WeddingWitnessesKuba';
 
 export const MARRIAGE_DATE: Date = new Date(2025, 6, 12, 16, 30, 0, 0)
 
 export const USER_ID = 'KvoQmT_FIJQvcZXYN'
 
 function App() {
-  
+
   const handleThemeChange = (newTheme: string) => {
     document.documentElement.setAttribute("data-theme", newTheme); // Set data-theme on <html>
   };

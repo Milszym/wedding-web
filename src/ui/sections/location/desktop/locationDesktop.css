@@ -6,6 +6,26 @@
     width: 100vw;
 }
 
+.slideIn1 {
+    transform: translateX(-100%);
+    transition: all 0.7s ease-out;
+}
+
+.slideIn2 {
+    transform: translateX(-100%);
+    transition: all 0.8s ease-out;
+}
+
+.slideIn3 {
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+}
+
+.slidedIn {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .locationImages {
     flex: 1;
     position: relative;

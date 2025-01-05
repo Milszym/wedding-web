@@ -8,6 +8,8 @@ interface CountdownProps {
 
 export const Countdown = (props: CountdownProps) => {
   
+  const [animate, setAnimate] = useState(false)
+
   const calculateTimeLeft = () => {
     const difference = props.targetDate.getTime() - new Date().getTime();
     if (difference > 0) {
@@ -26,6 +28,7 @@ export const Countdown = (props: CountdownProps) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
+      setAnimate(true)
       setTimeLeft(calculateTimeLeft());
     }, 1000, []);
 
@@ -59,7 +62,7 @@ export const Countdown = (props: CountdownProps) => {
       <span className="countdownLabel">min</span>
     </div>
     <div className="flex flex-col p-2">
-      <span className="countdown text-5xl">
+      <span className={`countdown text-5xl`}>
         {timeLeft.seconds}<br/>
       </span>
       <br/>

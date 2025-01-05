@@ -54,9 +54,7 @@
 
     .memoriesText {
         display: flex;
-        margin-top: 7vh;
         justify-content: flex-end;
-        margin-bottom: 2.2em;
         align-items: center;
     }
 

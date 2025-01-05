@@ -41,20 +41,41 @@
     color: black;
 }
 
+.kubaButton {
+    font-family: Cormorant;
+    font-weight: 400;
+}
+
+.witnessSlideInFromLeft {
+    transform: translateX(-100%);
+    transition: all 0.7s ease-out;
+}
+
+.witnessSlideInFromRight {
+    transform: translateX(100%);
+    transition: all 0.7s ease-out;
+}
+
+.witnessSlidedIn {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .weddingWitnesses {
         background-image: url('/public/images/peach_background_30.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .weddingWitnessesContent {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-bottom: 5vh;
     }
 
     .weddingWitnessesTitle {
-        margin-top: 7vh;
         font-size: 2.7em;
     }
 
