@@ -7,8 +7,12 @@ import { Faq } from './ui/sections/faq/Faq';
 import { WeddingWitnesses } from './ui/sections/weddingWitnesses/WeddingWitnesses';
 import { Memories } from './ui/sections/memories/Memories';
 import { Rsvp } from './ui/sections/rsvp/Rsvp';
+import { Toaster } from 'react-hot-toast';
+import emailjs from "emailjs-com";
 
 export const MARRIAGE_DATE: Date = new Date(2025, 6, 12, 16, 30, 0, 0)
+
+export const USER_ID = 'KvoQmT_FIJQvcZXYN'
 
 function App() {
   
@@ -18,6 +22,7 @@ function App() {
 
   useEffect(() => {
     handleThemeChange("pantone")
+    emailjs.init(USER_ID);
   }, [])
 
   return (
@@ -30,6 +35,7 @@ function App() {
         <WeddingWitnesses />
         <Memories />
         <Rsvp />
+        <Toaster />
       </div>
     </div>
   );

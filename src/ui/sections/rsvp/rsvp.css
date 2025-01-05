@@ -62,6 +62,10 @@
     cursor: pointer;
 }
 
+.rsvpThankYouTitle {
+    font-size: clamp(1rem, 3vw, 6rem);
+}
+
 @media(max-width: 768px) {
     .rsvpContent {
         background-image: url('/public/images/peach_background_30.png');
@@ -85,6 +89,10 @@
         margin-bottom: 2em;
         justify-content: space-evenly;
         width: 90vw;
+    }
+
+    .rsvpThankYouTitle {
+        font-size: clamp(1rem, 10vw, 6rem);
     }
 
     .rsvpOurContact {
