@@ -19,7 +19,6 @@
     font-family: Cormorant;
     font-weight: 200;
     color: black;
-    margin-bottom: 1em;
 }
 
 .rsvpInputs {
@@ -38,13 +37,12 @@
 }
 
 .rsvpButton {
-    margin-top: 2em;
+    margin-top: 2vh;
 }
 
 .rsvpOurContacts {
     display: flex;
     width: 40vw;
-    margin-top: 1em;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -72,7 +70,7 @@
     }
 
     .rsvpTitle {
-        font-size: 3em;
+        font-size: clamp(2rem, 5vh, 5rem);
     }
 
     .rsvpDescription {
@@ -85,7 +83,6 @@
     }
 
     .rsvpOurContacts {
-        margin-bottom: 2em;
         justify-content: space-evenly;
         width: 90vw;
     }

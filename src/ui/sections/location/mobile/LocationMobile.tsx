@@ -15,7 +15,7 @@ export const LocationMobile = () => {
             </div>
         </div>
         <div className="locationMobileImages">
-            <img className="locationMobileMainImage" src="/images/zdjecie_sali_mobile.png" onClick={navigateToZielonaBrama} />
+            <img className="locationMobileMainImage" src="/images/zdjecie_sali_full_alt.jpg" onClick={navigateToZielonaBrama} />
             <img className="locationMobileMapImage" src="/images/mapa.png" onClick={navigateToMap} />
         </div>
     </section>
