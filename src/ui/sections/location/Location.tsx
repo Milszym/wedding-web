@@ -1,3 +1,4 @@
+import { openUrl } from "../../../App"
 import { isMobile } from "../../../util/isMobile"
 import { LocationDesktop } from "./desktop/LocationDesktop"
 import { LocationMobile } from "./mobile/LocationMobile"
@@ -11,11 +12,11 @@ export const Location = () => {
 }
 
 export const navigateToMap = () => {
-    window.open(MAP_URL, '_blank')?.focus();
+    openUrl(MAP_URL)
 }
 
 export const navigateToZielonaBrama = () => {
-    window.open(ZIELONA_BRAMA_URL, '_blank')?.focus();
+    openUrl(ZIELONA_BRAMA_URL)
 }
 
 export const LOCATION_TITLE = 'Przywidz, Zielona Brama'

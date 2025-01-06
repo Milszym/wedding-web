@@ -10,6 +10,7 @@ import { Rsvp } from './ui/sections/rsvp/Rsvp';
 import { Toaster } from 'react-hot-toast';
 import emailjs from "emailjs-com";
 import { WeddingWitnessesKuba } from './ui/sections/weddingWitnesses/WeddingWitnessesKuba';
+import { isMobile } from './util/isMobile';
 
 export const MARRIAGE_DATE: Date = new Date(2025, 6, 12, 16, 30, 0, 0)
 
@@ -40,6 +41,14 @@ function App() {
       </div>
     </div>
   );
+}
+
+export const openUrl = (url: string) => {
+  if (isMobile()) {
+    window.open(url)?.focus();
+  } else {
+    window.open(url, '_blank')?.focus();
+  }
 }
 
 export default App;

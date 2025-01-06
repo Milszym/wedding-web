@@ -1,3 +1,4 @@
+import { openUrl } from "../../../App"
 import { PeachButton } from "../../common/PeachButton"
 import "./memories.css"
 
@@ -6,7 +7,7 @@ const GALLERY_URL = 'https://drive.google.com/drive/folders/1-nlWIF4GRFl7ZAxh2sf
 export const Memories = () => {
 
     const navigateToGallery = () => {
-        window.open(GALLERY_URL, '_blank')?.focus();
+        openUrl(GALLERY_URL)
     }
 
     return <section
