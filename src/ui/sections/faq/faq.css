@@ -68,10 +68,6 @@
 }
 
 @media(max-width: 768px) {
-    .faqContent {
-        background-image: url('/public/images/peach_background_30.png');
-    }
-
     .faqTitle {
         font-size: clamp(1rem, 10vw, 9rem);
         margin-top: 7vh;

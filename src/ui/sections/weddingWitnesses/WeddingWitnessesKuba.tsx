@@ -50,6 +50,7 @@ export const WeddingWitnessesKuba = () => {
                     }}>Niestety nie 😥</button>
                 </div>
             </div>
+            <div className="modal-backdrop" onClick={() => setKubaDialog(false)} />
         </dialog>
 
         <dialog id="my_modal_2" className="modal" open={yesDialog}>
@@ -69,6 +70,7 @@ export const WeddingWitnessesKuba = () => {
                     />
                 </div>
             </div>
+            <div className="modal-backdrop" onClick={() => setYesDialog(false)} />
         </dialog>
 
         <dialog id="my_modal_3" className="modal" open={noDialog}>
@@ -88,6 +90,7 @@ export const WeddingWitnessesKuba = () => {
                     />
                 </div>
             </div>
+            <div className="modal-backdrop" onClick={() => setNoDialog(false)} />
         </dialog>
     </section>
 }
