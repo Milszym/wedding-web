@@ -10,7 +10,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.titleTexts {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .titleDate {
@@ -24,6 +30,17 @@
   color: #fff;
   margin-top: -.2em;
   margin-bottom: 1em;
+}
+
+.titleCalendarButtonWrapper {
+    margin-top: -3.5vh;
+}
+
+.titleCalendarButton {
+  font-size: 2.2vh !important;
+  padding: 1.5vh 2vw !important;
+  min-height: 0 !important;
+  height: auto !important;
 }
 
 .titleContent {
@@ -94,6 +111,17 @@
   .titleHour {
     font-size: 1.5em;
     cursor: pointer;
+  }
+
+  .titleCalendarButtonWrapper {
+    margin-top: -1.2vh;
+  }
+
+  .titleCalendarButton {
+    font-size: 3vw !important;
+    padding: 1vh 3vw !important;
+    min-height: 0 !important;
+    height: auto !important;
   }
 
   .titleCountdown {

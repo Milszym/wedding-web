@@ -29,6 +29,10 @@ export const ceremonyFaqItems: FaqItem[] = [
         title: 'Kiedy składamy życzenia?',
         description: 'Życzenia będą składane po ceremonii również na świeżym powietrzu. Konferansjer ogłosi kiedy.'
     } as FaqItem,
+    {
+        title: 'Czy jest zorganizowany dojazd i powrót?',
+        description: 'Niestety nie. Dojazd i powrót we własnym zakresie. Jeżeli potrzebujesz transportu, daj nam znać, spróbujemy skontaktowac Cię z innymi goścmi, którzy mają miejsca w samochodzie 😉'
+    } as FaqItem,
 ]
 
 export const weddingFaqItems: FaqItem[] = [

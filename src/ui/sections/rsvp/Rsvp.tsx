@@ -14,8 +14,10 @@ export const Rsvp = () => {
     const [message, setMessage] = useState('')
     const [email, setEmail] = useState('')
     const [emailSent, setEmailSent] = useState(false)
+    const [sendEnabled, setSendEnabled] = useState(true)
 
     const sendEmail = async () => {
+        setSendEnabled(false)
         const serviceID = 'service_d4bc9kv';
         const templateID = 'template_ri7qxkn';
         const templateParams = {
@@ -36,7 +38,8 @@ export const Rsvp = () => {
                 style: toastStyle
             });
             console.error('Could not send email', error);
-            alert
+        } finally {
+            setSendEnabled(true)
         }
     }
 
@@ -74,10 +77,10 @@ export const Rsvp = () => {
                     className="rsvpInputText input input-bordered" />
             </div>
             <div className="rsvpButton">
-                <PeachButton text="Wyślij" onClick={sendEmail} />
+                <PeachButton text="Wyślij" enabled={sendEnabled} onClick={sendEmail} />
             </div>
         </> : <div className="rsvpThankYouTitle">
-            Dziękujemy! 😊 <br/>Do zobaczenia! 👋
+            Dziękujemy! 😊 <br />Do zobaczenia! 👋
         </div>}
         <br />
         <div className="rsvpOurContacts">

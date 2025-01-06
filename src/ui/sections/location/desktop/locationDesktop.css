@@ -79,3 +79,15 @@
     font-family: Cormorant;
     font-weight: 300;
 }
+
+.locationParkingButton {
+    margin-top: 3vh;
+    font-size: 2.3vh;
+}
+
+.locationParkingImage {
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 3vh;
+    cursor: pointer;
+}

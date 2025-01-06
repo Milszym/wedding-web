@@ -2,7 +2,6 @@
     color: #fff;
     background-color: #daaa98;
     font-family: Cormorant;
-    border: 0px;
     font-size: 2em;
     font-weight:200;
     padding: .5em 1.5em;
@@ -10,6 +9,17 @@
     height: auto;
     border-color: #ddc5bd;
     border-radius: 25em;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background-color: transparent !important;
+    border-color: #daaa98;
+    color: #daaa98;
 }
 
 .peachButton:hover {

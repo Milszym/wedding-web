@@ -1,6 +1,7 @@
 .weddingWitnesses {
     background-image: url('/public/images/peach_background_50.jpg');
     overflow: hidden;
+    width: 100%;
 }
 
 .weddingWitnessesTitle {

@@ -3,10 +3,12 @@ import { PeachButton } from "../../../common/PeachButton"
 import { LOCATION_DESCRIPTION, LOCATION_SUBTITLE, LOCATION_TITLE, navigateToMap, navigateToZielonaBrama } from "../Location"
 import "./locationDesktop.css"
 import { useInView } from "react-intersection-observer";
+import { ParkingDialog } from "../ParkingDialog";
 
 export const LocationDesktop = () => {
 
     const [isVisible, setIsVisible] = useState(false);
+    const [parkingModalVisible, setParkingModalVisible] = useState(false);
 
     const { ref } = useInView({
         triggerOnce: true,
@@ -28,6 +30,9 @@ export const LocationDesktop = () => {
             <div className="locationTitle">{LOCATION_TITLE}</div><br />
             <div className="locationSubtitle">{LOCATION_SUBTITLE}</div>
             <div className="locationDescription">{LOCATION_DESCRIPTION}</div>
+            <PeachButton className="locationParkingButton" text="Parking" onClick={() => setParkingModalVisible(true)} />
         </div>
+
+        <ParkingDialog setParkingModalVisible={setParkingModalVisible} parkingModalVisible={parkingModalVisible} />
     </section>
 }
