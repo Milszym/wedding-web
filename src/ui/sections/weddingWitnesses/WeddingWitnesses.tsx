@@ -25,7 +25,7 @@ export const WeddingWitnesses = () => {
                 </div>
             </div>
             <div className={`secondWitness witnessSlideInFromRight${isVisible ? ' witnessSlidedIn' : ''}`} >
-                <img className="witnessImage" src="https://media.tenor.com/lDMve-IMXY8AAAAM/spongebob-squarepants-begging.gif" />
+                <img className="witnessImage" src="/images/zdjecie_kuba.png" />
                 <div className="witnessText">
                     Kuba
                 </div>
