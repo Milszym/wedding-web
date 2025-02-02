@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { PeachButton } from "../../../common/PeachButton"
-import { LOCATION_DESCRIPTION, LOCATION_SUBTITLE, LOCATION_TITLE, navigateToMap, navigateToZielonaBrama } from "../Location"
+import { navigateToMap, navigateToZielonaBrama } from "../Location"
 import "./locationDesktop.css"
 import { useInView } from "react-intersection-observer";
 import { ParkingDialog } from "../ParkingDialog";
+import { useTranslation } from "react-i18next";
 
-export const LocationDesktop = () => {
+interface LocationDesktopProps {
+    description: JSX.Element
+}
+
+export const LocationDesktop = ({ description }: LocationDesktopProps) => {
+
+    const { t } = useTranslation()
 
     const [isVisible, setIsVisible] = useState(false);
     const [parkingModalVisible, setParkingModalVisible] = useState(false);
@@ -23,14 +30,14 @@ export const LocationDesktop = () => {
                 className={`locationMainImage slideIn1 ${isVisible ? ' slidedIn' : ''}`} src="/images/zdjecie_sali.png" onClick={navigateToZielonaBrama} />
             <img className={`locationMapImage slideIn2 ${isVisible ? ' slidedIn' : ''}`} src="/images/mapa.png" onClick={navigateToMap} />
             <div className={`locationMapButton slideIn3 ${isVisible ? ' slidedIn' : ''}`}>
-                <PeachButton text="Zobacz na mapie" onClick={navigateToMap} />
+                <PeachButton text={t('location.seeOnMap')} onClick={navigateToMap} />
             </div>
         </div>
         <div className="locationText">
-            <div className="locationTitle">{LOCATION_TITLE}</div><br />
-            <div className="locationSubtitle">{LOCATION_SUBTITLE}</div>
-            <div className="locationDescription">{LOCATION_DESCRIPTION}</div>
-            <PeachButton className="locationParkingButton" text="Parking" onClick={() => setParkingModalVisible(true)} />
+            <div className="locationTitle">{t('location.title')}</div><br />
+            <div className="locationSubtitle">{t('location.subtitle')}</div>
+            <div className="locationDescription">{description}</div>
+            <PeachButton className="locationParkingButton" text={t('location.parking')} onClick={() => setParkingModalVisible(true)} />
         </div>
 
         <ParkingDialog setParkingModalVisible={setParkingModalVisible} parkingModalVisible={parkingModalVisible} />

@@ -1,11 +1,18 @@
 import { useState } from "react"
 import { PeachButton } from "../../../common/PeachButton"
-import { LOCATION_DESCRIPTION, LOCATION_TITLE, navigateToMap, navigateToZielonaBrama } from "../Location"
+import { navigateToMap, navigateToZielonaBrama } from "../Location"
 import { ParkingDialog } from "../ParkingDialog"
 import "./locationMobile.css"
 import { useInView } from "react-intersection-observer"
+import { useTranslation } from "react-i18next"
 
-export const LocationMobile = () => {
+interface LocationMobileProps {
+    description: JSX.Element
+}
+
+export const LocationMobile = ({ description }: LocationMobileProps) => {
+
+    const { t } = useTranslation()
 
     const [parkingModalVisible, setParkingModalVisible] = useState(false)
 
@@ -15,14 +22,13 @@ export const LocationMobile = () => {
         onChange: (inView) => setIsVisible(inView),
     });
 
-
     return <section
         id="location"
         className="h-screen w-full locationMobileContent">
-        <div className="locationMobileTitle">{LOCATION_TITLE}</div><br />
-        <div className="locationMobileDescription">{LOCATION_DESCRIPTION}</div>
+        <div className="locationMobileTitle">{t('location.title')}</div><br />
+        <div className="locationMobileDescription">{description}</div>
         <div className="locationMobileMapButton">
-            <PeachButton text="Zobacz na mapie" onClick={navigateToMap} />
+            <PeachButton text={t('location.seeOnMap')} onClick={navigateToMap} />
         </div>
         <PeachButton className="locationMobileParkingButton" text="Parking" onClick={() => setParkingModalVisible(true)} />
         <div className="locationMobileImagesWrapper" ref={ref}>

@@ -3,8 +3,11 @@ import "./faq.css"
 import { FaqSection, faqSections } from "./FaqItems"
 import { isMobile } from "../../../util/isMobile"
 import { FaqMobileItems } from "./FaqMobileItems"
+import { useTranslation } from "react-i18next"
 
 export const Faq = () => {
+
+    const { t } = useTranslation()
 
     const [selectedSection, setSelectedSection] = useState<FaqSection>(faqSections[0])
     const changeSection = (newSection: FaqSection) => {
@@ -14,7 +17,7 @@ export const Faq = () => {
     return <section
         id="faq"
         className="h-screen w-full faqContent">
-        <div className="faqTitle">Więcej informacji</div><br />
+        <div className="faqTitle">{t('faq.title')}</div><br />
         <div className="faqSections">
             {faqSections.map((faqSection) => <div className={`faqSection${selectedSection == faqSection ? ` faqSelectedSection` : ''}`}
                 onClick={() => changeSection(faqSection)}>

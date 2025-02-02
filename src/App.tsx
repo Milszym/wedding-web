@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import './App.css';
-import { Navigation } from './ui/navigation/Navigation';
 import { Title } from './ui/sections/title/Title';
 import { Location } from './ui/sections/location/Location';
 import { Faq } from './ui/sections/faq/Faq';
@@ -9,10 +8,7 @@ import { Memories } from './ui/sections/memories/Memories';
 import { Rsvp } from './ui/sections/rsvp/Rsvp';
 import { Toaster } from 'react-hot-toast';
 import emailjs from "emailjs-com";
-import { WeddingWitnessesKuba } from './ui/sections/weddingWitnesses/WeddingWitnessesKuba';
 import { isMobile } from './util/isMobile';
-
-export const MARRIAGE_DATE: Date = new Date(2025, 6, 12, 16, 30, 0, 0)
 
 export const USER_ID = 'KvoQmT_FIJQvcZXYN'
 

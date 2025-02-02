@@ -1,18 +1,21 @@
 import "./title.css"
 import { Countdown } from "./Countdown"
-import { MARRIAGE_DATE } from "../../../App"
 import { isMobile } from "../../../util/isMobile"
 import { PeachButton } from "../../common/PeachButton"
+import { MainConfig } from "../../../config/MainConfig"
+import { useTranslation } from "react-i18next"
 
 export const Title = () => {
 
+    const { t } = useTranslation()
+
     const addEventToGoogleCalendar = () => {
         const event = {
-            title: 'Ślub i wesele Doroty i Szymona',
-            description: 'Ślub i wesele w Zielonej Bramie w Przywidzu. Do zobaczenia!',
-            location: 'Zielona Brama, Przywidz',
-            startTime: '2025-07-12T16:30:00',
-            endTime: '2025-07-13T3:00:00',
+            title: t('title.calendarEventName'),
+            description: t('title.calendarEventDescription'),
+            location: MainConfig.title.calendarEventLocation,
+            startTime: MainConfig.title.exactStartDate,
+            endTime: MainConfig.title.exactEndDate,
         };
 
         const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&dates=${event.startTime.replace(/-|:|\./g, '')}/${event.endTime.replace(/-|:|\./g, '')}`;
@@ -27,26 +30,26 @@ export const Title = () => {
         <div className="titleOverlay" />
         <div className="titleContent">
             <div className="titleTexts">
-                <h1 className="title">Dorota i Szymon</h1>
+                <h1 className="title">{t('title.names')}</h1>
                 <br />
                 <div className="titleDate" onClick={addEventToGoogleCalendar}>
-                    12 Lipca 2025
+                    {t('title.date')}
                 </div>
                 <div className="titleHour" onClick={addEventToGoogleCalendar}>
-                    16:30
+                    {MainConfig.title.hour}
                 </div>
                 <div className="titleCalendarButtonWrapper">
                     <PeachButton className="titleCalendarButton"
                         outline={true}
-                        text="Dodaj do kalendarza"
+                        text={t('title.addEventToCalendar')}
                         onClick={addEventToGoogleCalendar} />
                 </div>
                 {!isMobile() && <div className="titleCountdown">
-                    <Countdown targetDate={MARRIAGE_DATE} addEventToGoogleCalendar={addEventToGoogleCalendar} />
+                    <Countdown targetDate={MainConfig.marriageDate} addEventToGoogleCalendar={addEventToGoogleCalendar} />
                 </div>}
             </div>
             {isMobile() && <div className="titleCountdown">
-                <Countdown targetDate={MARRIAGE_DATE} addEventToGoogleCalendar={addEventToGoogleCalendar} />
+                <Countdown targetDate={MainConfig.marriageDate} addEventToGoogleCalendar={addEventToGoogleCalendar} />
             </div>}
         </div>
     </section>

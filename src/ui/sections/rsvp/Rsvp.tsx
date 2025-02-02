@@ -3,12 +3,13 @@ import { PeachButton } from "../../common/PeachButton"
 import "./rsvp.css"
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
-
-const toastStyle = {
-    fontFamily: 'Cormorant'
-}
+import { useTranslation } from "react-i18next";
+import { showToast, ToastPosition, ToastType } from "../../common/toast/toast";
+import { MainConfig } from "../../../config/MainConfig";
 
 export const Rsvp = () => {
+
+    const { t } = useTranslation()
 
     const [who, setWho] = useState('')
     const [message, setMessage] = useState('')
@@ -17,6 +18,9 @@ export const Rsvp = () => {
     const [sendEnabled, setSendEnabled] = useState(true)
 
     const sendEmail = async () => {
+        if (!validate()) {
+            return
+        }
         setSendEnabled(false)
         const serviceID = 'service_d4bc9kv';
         const templateID = 'template_ri7qxkn';
@@ -29,18 +33,22 @@ export const Rsvp = () => {
         try {
             const response = await emailjs.send(serviceID, templateID, templateParams);
             console.log('Email successfully sent', response.status, response.text);
-            toast.success('Pomyślnie wysłano wiadomość. Dziękujemy i do zobaczenia!', {
-                style: toastStyle
-            });
+            showToast('Pomyślnie wysłano wiadomość. Dziękujemy i do zobaczenia!', ToastType.SUCCESS);
             setEmailSent(true)
         } catch (error) {
-            toast.error('Niestety nie udało się wysłać wiadomości. Spróbuj później lub zadzwoń do nas osobiście :)', {
-                style: toastStyle
-            });
+            showToast('Niestety nie udało się wysłać wiadomości. Spróbuj później lub zadzwoń do nas osobiście :)', ToastType.ERROR);
             console.error('Could not send email', error);
         } finally {
             setSendEnabled(true)
         }
+    }
+
+    const validate = () => {
+        if (who === '' || message === '' || email === '') {
+            showToast(t('rsvp.formNotFilledError'), ToastType.ERROR, ToastPosition.BOTTOM_CENTER);
+            return false
+        }
+        return true
     }
 
     const onWhoChanged = (newWho: string) => {
@@ -58,37 +66,37 @@ export const Rsvp = () => {
     return <section
         id="rsvp"
         className="h-screen w-full rsvpContent">
-        <div className="rsvpTitle">RSVP</div><br />
+        <div className="rsvpTitle">{t('')}</div><br />
         <div className="rsvpDescription">
-            Prosimy o potwierdzenie swojej obecności na weselu wraz z informacją o tym czy zabieracie ze sobą swoje dzieci i czy chcecie skorzystać z noclegu.
+            {t('rsvp.description1')}
             <br /><br />
-            Nie możemy się już doczekać aż spędzimy z Wami ten wyjątkowy dzień!
+            {t('rsvp.description2')}
         </div><br />
         {!emailSent ? <>
             <div className="rsvpInputs">
-                <input type="text" placeholder="Kto?" onChange={(event) => onWhoChanged(event.target.value)}
+                <input type="text" placeholder={t('rsvp.who')} onChange={(event) => onWhoChanged(event.target.value)}
                     className="rsvpInputText input input-bordered" />
                 <br />
-                <textarea className="rsvpInputText textarea textarea-bordered" placeholder="Wiadomość"
+                <textarea className="rsvpInputText textarea textarea-bordered" placeholder={t('rsvp.message')}
                     onChange={(event) => onMessageChanged(event.target.value)} />
                 <br />
-                <input type="email" placeholder="Email"
+                <input type="email" placeholder={t('rsvp.email')} autoComplete="email"
                     onChange={(event) => onEmailChanged(event.target.value)}
                     className="rsvpInputText input input-bordered" />
             </div>
             <div className="rsvpButton">
-                <PeachButton text="Wyślij" enabled={sendEnabled} onClick={sendEmail} />
+                <PeachButton text={t('rsvp.send')} enabled={sendEnabled} onClick={sendEmail} />
             </div>
         </> : <div className="rsvpThankYouTitle">
-            Dziękujemy! 😊 <br />Do zobaczenia! 👋
+            {t('rsvp.thankYou')}!
         </div>}
         <br />
         <div className="rsvpOurContacts">
             <div className="rsvpOurContact">
-                Dorota <PhoneNumber phoneNumber="880 491 301" />
+                {t('rsvp.firstName')} <PhoneNumber phoneNumber={MainConfig.rsvp.firstPhoneNumber} />
             </div>
             <div className="rsvpOurContact">
-                Szymon <PhoneNumber phoneNumber="665 123 549" />
+                {t('rsvp.secondName')} <PhoneNumber phoneNumber={MainConfig.rsvp.secondPhoneNumber} />
             </div>
         </div>
     </section >
