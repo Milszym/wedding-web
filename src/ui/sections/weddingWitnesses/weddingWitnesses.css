@@ -36,6 +36,7 @@
     aspect-ratio: 1;
     border-radius: 50%;
     border: solid 4px #daaa98;
+    object-fit: cover;
 }
 
 .witnessText {

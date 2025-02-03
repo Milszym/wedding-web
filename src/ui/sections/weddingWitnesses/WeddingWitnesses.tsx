@@ -28,7 +28,7 @@ export const WeddingWitnesses = () => {
                 </div>
             </div>
             <div className={`secondWitness witnessSlideInFromRight${isVisible ? ' witnessSlidedIn' : ''}`} >
-                <img className="witnessImage" src="/images/zdjecie_kuba.png" />
+                <img className="witnessImage" src="/images/kuba_hq.jpg" />
                 <div className="witnessText">
                     {t('witnesses.secondWitness')}
                 </div>
