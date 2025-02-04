@@ -66,7 +66,7 @@ export const Rsvp = () => {
     return <section
         id="rsvp"
         className="h-screen w-full rsvpContent">
-        <div className="rsvpTitle">{t('')}</div><br />
+        <div className="rsvpTitle">{t('rsvp.title')}</div><br />
         <div className="rsvpDescription">
             {t('rsvp.description1')}
             <br /><br />
