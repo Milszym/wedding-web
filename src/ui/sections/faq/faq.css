@@ -23,7 +23,7 @@
 .faqSection {
     color: black;
     font-size: clamp(1rem, 2vw, 2.5rem);
-    margin: 1em;
+    margin: .5em;
     font-family: Cormorant;
     cursor: pointer;
     font-weight: 300;

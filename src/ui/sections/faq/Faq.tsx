@@ -17,7 +17,7 @@ export const Faq = () => {
     return <section
         id="faq"
         className="h-screen w-full faqContent">
-        <div className="faqTitle">{t('faq.title')}</div><br />
+        <div className="faqTitle">{t('faq.title')}</div>
         <div className="faqSections">
             {faqSections.map((faqSection) => <div className={`faqSection${selectedSection == faqSection ? ` faqSelectedSection` : ''}`}
                 onClick={() => changeSection(faqSection)}>
