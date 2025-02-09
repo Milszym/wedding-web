@@ -1,20 +1,20 @@
 {
     "title": {
         "names": "Dorota i Szymon",
-        "date": "12 Lipca 2025",
-        "calendarEventName": "Ślub i wesele Doroty i Szymona",
-        "addEventToCalendar": "Dodaj do kalendarza"
+        "date": "12th July 2025",
+        "calendarEventName": "Dorota and Szymon's wedding",
+        "addEventToCalendar": "Add to calendar"
     },
     "location": {
         "title": "Przywidz, Zielona Brama",
         "subtitle": "Sala Sopocka",
-        "descriptio1": "Nasza ceremonia zaślubin odbędzie się pod chmurką, tuż obok sali weselnej.",
+        "description1": "Nasza ceremonia zaślubin odbędzie się pod chmurką, tuż obok sali weselnej.",
         "description2": "Po ceremonii serdecznie zapraszamy Was na przyjęcie weselne, które odbędzie się w Sali Sopockiej tuż obok! 🥂🎶",
         "seeOnMap": "Zobacz na mapie",
         "parking": "Parking"
     },
     "faq": {
-        "title": "Więcej informacji",
+        "title": "Więcej informacji"
     },
     "witnesses": {
         "title": "Świadkowie",
