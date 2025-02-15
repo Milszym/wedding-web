@@ -6,7 +6,7 @@ export const MainConfig = {
     title: {
         hour: '16:30',
         exactStartDate: '2025-07-12T16:30:00',
-        exactEndDate: '2025-07-13T3:00:00',
+        exactEndDate: '2025-07-13T03:00:00',
         calendarEventTitle: i18next.t('title.calendarEventTitle'),
         calendarEventDescription: i18next.t('title.calendarEventDescription'),
         calendarEventLocation: 'Zielona Brama, Przywidz',
