@@ -41,7 +41,7 @@ export const weddingFaqItems: FaqItem[] = [
         description: 'Oczywiście, ale potrzebujemy informacje o chęci skorzystania z tej opcji, więc koniecznie daj nam o tym znać!'
     } as FaqItem,
     {
-        title: 'Czy obok sali jest przestrzeń dla gości na świeym powietrzu?',
+        title: 'Czy obok sali jest przestrzeń dla gości na świeżym powietrzu?',
         description: 'Tak, dookoła sali weselnej jest pełno terenów zielonych z których śmiało możecie korzystać, żeby zaczerpnąć świeżego powietrza.'
     } as FaqItem,
     {

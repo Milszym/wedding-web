@@ -23,7 +23,7 @@ export const Title = () => {
         window.open(googleCalendarUrl, '_blank');
     };
 
-    const imagePath = isMobile() ? '/images/zdjecie_z_wesela_cropped.jpg' : '/images/zareczyny_cropped.jpg'
+    const imagePath = isMobile() ? '/images/zdjecie_z_wesela_cropped.jpg' : '/images/title_a_cropped.jpg'
 
     return <section id="title" className="w-full h-screen titleSection">
         <img className="titleBg" src={imagePath} />
