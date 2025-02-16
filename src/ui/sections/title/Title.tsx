@@ -4,6 +4,7 @@ import { isMobile } from "../../../util/isMobile"
 import { PeachButton } from "../../common/PeachButton"
 import { MainConfig } from "../../../config/MainConfig"
 import { useTranslation } from "react-i18next"
+import { openUrl } from "../../../App"
 
 export const Title = () => {
 
@@ -20,7 +21,7 @@ export const Title = () => {
 
         const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&dates=${event.startTime.replace(/-|:|\./g, '')}/${event.endTime.replace(/-|:|\./g, '')}`;
 
-        window.open(googleCalendarUrl, '_blank');
+        openUrl(googleCalendarUrl, false)
     };
 
     const imagePath = isMobile() ? '/images/zdjecie_z_wesela_cropped.jpg' : '/images/title_a_cropped.jpg'

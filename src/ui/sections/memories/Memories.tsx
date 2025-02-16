@@ -10,7 +10,7 @@ export const Memories = () => {
     const { t } = useTranslation()
 
     const navigateToGallery = () => {
-        openUrl(GALLERY_URL)
+        openUrl(GALLERY_URL, false)
     }
 
     return <section

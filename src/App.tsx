@@ -52,11 +52,11 @@ function App() {
   );
 }
 
-export const openUrl = (url: string) => {
+export const openUrl = (url: string, withBlank: boolean = true) => {
   if (isMobile()) {
     window.open(url)?.focus();
   } else {
-    window.open(url, '_blank')?.focus();
+    window.open(url, withBlank ? '_blank' : '')?.focus();
   }
 }
 

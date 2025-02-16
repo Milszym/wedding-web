@@ -14,7 +14,7 @@
 }
 
 .rsvpDescription {
-    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     width: 65%;
     font-family: Cormorant;
     font-weight: 200;
