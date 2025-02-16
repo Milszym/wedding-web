@@ -1,7 +1,6 @@
 .title {
-  font-size: 8em;
+  font-size: clamp(5vw, 7.5vw, 20vw);
   color: #DAAA98;
-  margin-top: 2em;
 }
 
 .titleSection {
@@ -19,25 +18,27 @@
   align-items: center;
 }
 
+.titleDateHour {
+  line-height: 1.5;
+}
+
 .titleDate {
-  font-size: 5em;
+  font-size: clamp(5vw, 4.2vw, 20vw);
   color: #fff;
-  margin-top: -.5em;
 }
 
 .titleHour {
-  font-size: 2.5em;
+  font-size: clamp(2vw, 2vw, 20vw);
   color: #fff;
-  margin-top: -.2em;
   margin-bottom: 1em;
 }
 
 .titleCalendarButtonWrapper {
-    margin-top: -3.5vh;
+  margin-top: .6em;
 }
 
 .titleCalendarButton {
-  font-size: 2.2vh !important;
+  font-size: 1.6vh !important;
   padding: 1.5vh 2vw !important;
   min-height: 0 !important;
   height: auto !important;
@@ -46,10 +47,10 @@
 .titleContent {
   font-weight: 200;
   display: flex;
-  position: absolute;
-  inset: 0;
+  height: 100vh;
   align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   justify-items: center;
 }
@@ -81,8 +82,13 @@
   color: #fff;
 }
 
+.titleCalendarButton {
+  font-size: clamp(5vw, 2vw, 20vw);
+}
+
 .titleCountdown {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .countdownLabel {
@@ -91,11 +97,8 @@
 
 @media (max-width: 768px) {
   .titleContent {
-    align-items: flex-start;
-    justify-content: center;
-    justify-self: center;
-    flex-wrap: nowrap;
-    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .title {
@@ -114,7 +117,7 @@
   }
 
   .titleCalendarButtonWrapper {
-    margin-top: -1.2vh;
+    margin-top: auto;
   }
 
   .titleCalendarButton {
@@ -125,8 +128,6 @@
   }
 
   .titleCountdown {
-    position: absolute;
-    bottom: 10vh;
   }
 
   .countdownLabel {

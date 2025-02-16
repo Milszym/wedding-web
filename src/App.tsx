@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Title } from './ui/sections/title/Title';
 import { Location } from './ui/sections/location/Location';
@@ -13,6 +13,19 @@ import { isMobile } from './util/isMobile';
 export const USER_ID = 'KvoQmT_FIJQvcZXYN'
 
 function App() {
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleThemeChange = (newTheme: string) => {
     document.documentElement.setAttribute("data-theme", newTheme); // Set data-theme on <html>

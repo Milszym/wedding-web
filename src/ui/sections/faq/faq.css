@@ -11,7 +11,7 @@
 }
 
 .faqTitle {
-    font-size: clamp(1rem, 5vw, 9rem);
+    font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .faqSections {
@@ -56,7 +56,7 @@
 }
 
 .faqItemTitle {
-    font-size: clamp(1rem, 1.8vw, 6rem);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
     font-weight: 200;
 }
 
@@ -70,7 +70,6 @@
 @media(max-width: 768px) {
     .faqTitle {
         font-size: clamp(1rem, 10vw, 9rem);
-        margin-top: 7vh;
     }
 
     .faqSection {

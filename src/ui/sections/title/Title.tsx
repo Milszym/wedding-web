@@ -29,28 +29,27 @@ export const Title = () => {
         <img className="titleBg" src={imagePath} />
         <div className="titleOverlay" />
         <div className="titleContent">
-            <div className="titleTexts">
-                <h1 className="title">{t('title.names')}</h1>
-                <br />
-                <div className="titleDate" onClick={addEventToGoogleCalendar}>
-                    {t('title.date')}
-                </div>
-                <div className="titleHour" onClick={addEventToGoogleCalendar}>
-                    {MainConfig.title.hour}
-                </div>
-                <div className="titleCalendarButtonWrapper">
-                    <PeachButton className="titleCalendarButton"
-                        outline={true}
-                        text={t('title.addEventToCalendar')}
-                        onClick={addEventToGoogleCalendar} />
-                </div>
-                {!isMobile() && <div className="titleCountdown">
-                    <Countdown targetDate={MainConfig.marriageDate} addEventToGoogleCalendar={addEventToGoogleCalendar} />
-                </div>}
+            <div className="title">
+                {t('title.names')}
             </div>
-            {isMobile() && <div className="titleCountdown">
+            <div className="titleDateHour" onClick={addEventToGoogleCalendar}>
+                <span className="titleDate">
+                    {t('title.date')}
+                </span>
+                <br/>
+                <span className="titleHour">
+                    {MainConfig.title.hour}
+                </span>
+            </div>
+            <div className="titleCalendarButtonWrapper">
+                <PeachButton className="titleCalendarButton"
+                    outline={true}
+                    text={t('title.addEventToCalendar')}
+                    onClick={addEventToGoogleCalendar} />
+            </div>
+            <div className="titleCountdown">
                 <Countdown targetDate={MainConfig.marriageDate} addEventToGoogleCalendar={addEventToGoogleCalendar} />
-            </div>}
+            </div>
         </div>
     </section>
 }

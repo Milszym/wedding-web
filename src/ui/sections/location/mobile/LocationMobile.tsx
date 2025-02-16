@@ -25,7 +25,7 @@ export const LocationMobile = ({ description }: LocationMobileProps) => {
     return <section
         id="location"
         className="h-screen w-full locationMobileContent">
-        <div className="locationMobileTitle">{t('location.title')}</div><br />
+        <div className="locationMobileTitle">{t('location.title')}</div>
         <div className="locationMobileDescription">{description}</div>
         <div className="locationMobileMapButton">
             <PeachButton text={t('location.seeOnMap')} onClick={navigateToMap} />
@@ -35,10 +35,6 @@ export const LocationMobile = ({ description }: LocationMobileProps) => {
             <img className={`locationMobileMainImage locationSlideInFromLeft${isVisible ? ` locationSlidedIn` : ''}`} src="/images/zdjecie_sali_full_alt.jpg" onClick={navigateToZielonaBrama} />
             <img className={`locationMobileSmallImage locationSlideInFromRight${isVisible ? ` locationSlidedIn` : ``}`} src="/images/zielona_brama_stajnia.jpg" onClick={navigateToZielonaBrama} />
         </div>
-        {/* <div className="locationMobileImages">
-            <img className="locationMobileMapImage" src="/images/mapa.png" onClick={navigateToMap} />
-        </div> */}
-
         <ParkingDialog setParkingModalVisible={setParkingModalVisible} parkingModalVisible={parkingModalVisible} />
     </section>
 }

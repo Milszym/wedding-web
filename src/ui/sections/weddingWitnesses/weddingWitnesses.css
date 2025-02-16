@@ -5,7 +5,7 @@
 }
 
 .weddingWitnessesTitle {
-    font-size: 5em;
+    font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .weddingWitnessesDescription {
@@ -42,11 +42,6 @@
 .witnessText {
     font-size: 2em;
     color: black;
-}
-
-.kubaButton {
-    font-family: Cormorant;
-    font-weight: 400;
 }
 
 .witnessSlideInFromLeft {
@@ -88,7 +83,7 @@
     }
 
     .witnessImage {
-        height: 55vw;
+        height: 40vw;
         aspect-ratio: 1;
         margin-top: 2em;
     }

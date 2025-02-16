@@ -39,29 +39,29 @@ export const Countdown = (props: CountdownProps) => {
     return <div>Dziękujemy za spędzenie z nami tego wyjątkowego dnia!</div>;
   }
 
-  return <div className="flex items-center justify-center grid auto-cols-max grid-flow-col gap-5 text-center" onClick={props.addEventToGoogleCalendar}>
-    <div className="flex flex-col p-2">
+  return <div className="items-center justify-center grid auto-cols-max grid-flow-col gap-5 text-center" onClick={props.addEventToGoogleCalendar}>
+    <div className="flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.days}<br/>
       </span>
       <br/>
       <span className="countdownLabel">dni</span>
     </div>
-    <div className="flex flex-col p-2">
+    <div className="flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.hours}
       </span>
       <br/>
       <span className="countdownLabel">godz</span>
     </div>
-    <div className="flex flex-col p-2">
+    <div className="flex-col p-2">
       <span className="countdown text-5xl">
         {timeLeft.minutes}<br/>
       </span>
       <br/>
       <span className="countdownLabel">min</span>
     </div>
-    <div className="flex flex-col p-2">
+    <div className="flex-col p-2">
       <span className={`countdown text-5xl`}>
         {timeLeft.seconds}<br/>
       </span>

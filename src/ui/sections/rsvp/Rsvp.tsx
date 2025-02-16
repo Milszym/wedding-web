@@ -77,7 +77,7 @@ export const Rsvp = () => {
                 <input type="text" placeholder={t('rsvp.who')} onChange={(event) => onWhoChanged(event.target.value)}
                     className="rsvpInputText input input-bordered" />
                 <br />
-                <textarea className="rsvpInputText textarea textarea-bordered" placeholder={t('rsvp.message')}
+                <textarea className="rsvpInputText textarea textarea-bordered rsvpInputMessage" placeholder={t('rsvp.message')}
                     onChange={(event) => onMessageChanged(event.target.value)} />
                 <br />
                 <input type="email" placeholder={t('rsvp.email')} autoComplete="email"

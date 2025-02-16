@@ -27,7 +27,7 @@ export const LocationDesktop = ({ description }: LocationDesktopProps) => {
         className="h-screen w-full flex flex-col items-center justify-center locationContent">
         <div className="locationImages">
             <img ref={ref}
-                className={`locationMainImage slideIn1 ${isVisible ? ' slidedIn' : ''}`} src="/images/zdjecie_sali.png" onClick={navigateToZielonaBrama} />
+                className={`locationMainImage slideIn1 ${isVisible ? ' slidedIn' : ''}`} src="/images/zdjecie_sali_square.jpg" onClick={navigateToZielonaBrama} />
             <img className={`locationMapImage slideIn2 ${isVisible ? ' slidedIn' : ''}`} src="/images/mapa.png" onClick={navigateToMap} />
             <div className={`locationMapButton slideIn3 ${isVisible ? ' slidedIn' : ''}`}>
                 <PeachButton text={t('location.seeOnMap')} onClick={navigateToMap} />

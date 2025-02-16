@@ -10,11 +10,11 @@
 }
 
 .rsvpTitle {
-    font-size: 5em;
+    font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .rsvpDescription {
-    font-size: 1.7em;
+    font-size: clamp(1rem, 2vw, 2.5rem);
     width: 65%;
     font-family: Cormorant;
     font-weight: 200;
@@ -22,7 +22,7 @@
 }
 
 .rsvpInputs {
-    width: 30vw;
+    width: 35vw;
     display: flex;
     justify-items: flex-start;
     justify-content: flex-start;
@@ -36,15 +36,19 @@
     font-size: 1.6em;
 }
 
+.rsvpInputMessage {
+    font-size: 1.2em;
+}
+
 .rsvpButton {
     margin-top: 2vh;
 }
 
 .rsvpOurContacts {
     display: flex;
-    width: 40vw;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 13vw;
 }
 
 .rsvpOurContact {
@@ -64,6 +68,11 @@
     font-size: clamp(1rem, 3vw, 6rem);
 }
 
+@media(max-width: 1300px) {
+    .rsvpInputs {
+        width: 55vw;
+    }
+}
 @media(max-width: 768px) {
     .rsvpContent {
         background-image: url('/public/images/peach_background_30.png');

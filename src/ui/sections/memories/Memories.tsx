@@ -15,14 +15,16 @@ export const Memories = () => {
 
     return <section
         id="memories"
-        className="h-screen w-full memoriesContent">
-        <div className="memoriesText">
-            <div className="memoriesTitle">{t('memories.title')}</div><br />
-            <div className="memoriesDescription">{t('memories.description')}</div><br />
-            <PeachButton text={t('memories.gallery')} onClick={navigateToGallery} />
-        </div>
-        <div className="memoriesImageContainer">
-            <img className="memoriesImage" src="/images/memories_photo.jpeg" />
+        className="memoriesContent">
+        <div className="memoriesContent">
+            <div className="memoriesText">
+                <div className="memoriesTitle">{t('memories.title')}</div><br />
+                <div className="memoriesDescription">{t('memories.description')}</div><br />
+                <PeachButton text={t('memories.gallery')} onClick={navigateToGallery} />
+            </div>
+            <div className="memoriesImageContainer">
+                <img className="memoriesImage" src="/images/memories_photo.jpeg" />
+            </div>
         </div>
     </section>
 }
