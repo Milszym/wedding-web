@@ -15,11 +15,11 @@ export const ceremonyFaqItems: FaqItem[] = [
     } as FaqItem,
     {
         title: 'Czy na ceremonii będą krzesełka?',
-        description: 'Będą! Jeśli znajdziesz miejsce - śmiało siadaj. Obowiązuje zasada kto pierwszy ten lepszy. Prosimy tylko o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej.'
+        description: 'Prawdopodobnie będą, aczkolwiek w ograniczonej ilości! Prosimy o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej. Co do reszty krzesełek obowiązuje zasada kto pierwszy ten lepszy.'
     } as FaqItem,
     {
         title: 'Przyjechałem, co teraz?',
-        description: 'Jeżeli zgłosiłeś chęć skorzystania z noclegu, udaj się do recepcji znajdującej się w Białym Dworku. Przedstaw się, a osoby na recepcji wskażą miejsce noclegu.\n\nNastępnie udaj się na trawiastą przestrzeń tuż obok Sali Sopockiej gdzie odbędzie się ceremonia.'
+        description: 'Jeżeli zgłosiłeś chęć skorzystania z noclegu, w dniu wesela (lub trochę wcześniej) powinieneś dostać SMSa z nazwą budynku, numerem pokoju oraz kodem. Udaj się do odpowiedniego budynku i wpisz kod do drzwi wejściowych, następnie znajdź pokój i użyj tego samego kodu do drzwi pokoju.'
     } as FaqItem,
     {
         title: 'Czy na miejscu jest parking?',

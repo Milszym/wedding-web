@@ -39,5 +39,13 @@
         "formNotFilledError": "Proszę wypełnić wszystkie pola formularza.",
         "send": "Wyślij",
         "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋"
+    },
+    "tables": {
+        "title": "Stoły",
+        "description": "Wpisz swoje dokładne imię i nazwisko i wyszukaj swój stół.",
+        "who": "Kto?",
+        "search": "Wyszukaj stół",
+        "tableNotFound": "Nie znaleziono stołu, upewnij się, że wpisałeś poprawne imię i nazwisko.",
+        "formNotFilledError":"Wpisz proszę imie i nazwisko :)."
     }
 }

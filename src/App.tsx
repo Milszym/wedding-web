@@ -9,6 +9,7 @@ import { Rsvp } from './ui/sections/rsvp/Rsvp';
 import { Toaster } from 'react-hot-toast';
 import emailjs from "emailjs-com";
 import { isMobile } from './util/isMobile';
+import { Tables } from './ui/sections/tables/Tables';
 
 export const USER_ID = 'KvoQmT_FIJQvcZXYN'
 
@@ -46,6 +47,8 @@ function App() {
         <WeddingWitnesses />
         <Memories />
         <Rsvp />
+        {/* <Tables /> */}
+
         <Toaster />
       </div>
     </div>
