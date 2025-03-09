@@ -14,12 +14,12 @@ export const ceremonyFaqItems: FaqItem[] = [
         description: 'Ceremonia odbędzie się o godzinie 16:30'
     } as FaqItem,
     {
-        title: 'Czy na ceremonii będą krzesełka?',
-        description: 'Prawdopodobnie będą, aczkolwiek w ograniczonej ilości! Prosimy o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej. Co do reszty krzesełek obowiązuje zasada kto pierwszy ten lepszy.'
+        title: 'Czy jest zorganizowany dojazd i powrót?',
+        description: 'Niestety nie. Dojazd i powrót we własnym zakresie. Jeżeli potrzebujesz transportu, daj nam znać, spróbujemy skontaktowac Cię z innymi goścmi, którzy mają miejsca w samochodzie 😉'
     } as FaqItem,
     {
-        title: 'Przyjechałem, co teraz?',
-        description: 'Jeżeli zgłosiłeś chęć skorzystania z noclegu, w dniu wesela (lub trochę wcześniej) powinieneś dostać SMSa z nazwą budynku, numerem pokoju oraz kodem. Udaj się do odpowiedniego budynku i wpisz kod do drzwi wejściowych, następnie znajdź pokój i użyj tego samego kodu do drzwi pokoju.'
+        title: 'Czy na ceremonii będą krzesełka?',
+        description: 'Prawdopodobnie będą, aczkolwiek w ograniczonej ilości! Prosimy o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej. Co do reszty krzesełek obowiązuje zasada kto pierwszy ten lepszy.'
     } as FaqItem,
     {
         title: 'Czy na miejscu jest parking?',
@@ -30,8 +30,8 @@ export const ceremonyFaqItems: FaqItem[] = [
         description: 'Życzenia będą składane po ceremonii również na świeżym powietrzu. Konferansjer ogłosi kiedy.'
     } as FaqItem,
     {
-        title: 'Czy jest zorganizowany dojazd i powrót?',
-        description: 'Niestety nie. Dojazd i powrót we własnym zakresie. Jeżeli potrzebujesz transportu, daj nam znać, spróbujemy skontaktowac Cię z innymi goścmi, którzy mają miejsca w samochodzie 😉'
+        title: 'Czy chcecie dostać kwiaty?',
+        description: 'Nie, jeżeli chcecie nam zrobić prezent to zamiast kwiatów chętnie przyjmiemy książki, które uznajecie za warte przeczytania 😊'
     } as FaqItem,
 ]
 
@@ -72,8 +72,12 @@ export const accomodationFaqItems: FaqItem[] = [
         description: 'Nocleg jest w jednym z trzech budynków na terenie Zielonej Bramy. Poinformujemy o rozkładzie pokojów bliżej terminu wesela.'
     } as FaqItem,
     {
+        title: 'Przyjechałem, co teraz?',
+        description: 'Jeżeli zgłosiłeś chęć skorzystania z noclegu, w dniu wesela (lub trochę wcześniej) powinieneś dostać SMSa z nazwą budynku, numerem pokoju oraz kodem. Udaj się do odpowiedniego budynku i wpisz kod do drzwi wejściowych, następnie znajdź pokój i użyj tego samego kodu do drzwi pokoju.'
+    } as FaqItem,
+    {
         title: 'Czy dla gości nocujących przewidziane jest śniadanie?',
-        description: 'Tak, w niedzielę 13 lipca goście mają zagwarantowane śniadanie. Odbędzie się ono na tej samej Sali Sopockiej na której odbędzie się wesele.'
+        description: 'Tak, w niedzielę 13 lipca goście mają zagwarantowane śniadanie. Odbędzie się ono na sali restauracyjnej w Białym Dworku. Po wejściu do dworku kierujcie się na lewo.'
     } as FaqItem,
     {
         title: 'Czy na miejscu jest parking?',
@@ -81,7 +85,7 @@ export const accomodationFaqItems: FaqItem[] = [
     } as FaqItem,
     {
         title: 'O której zaczyna i kończy się doba hotelowa?',
-        description: 'Doba hotelowa zaczyna się o 15:00 a kończy o 12:00.'
+        description: 'Doba hotelowa zaczyna się o 15:00 a kończy o 12:00. Jeżeli chcesz przyjechać szybciej, daj nam znać, postaramy się to zorganizować 😊'
     } as FaqItem,
 ]
 
