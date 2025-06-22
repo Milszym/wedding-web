@@ -1,20 +1,9 @@
 import { useEffect, useState } from 'react';
-import './App.css';
-import { Title } from './ui/sections/title/Title';
-import { Location } from './ui/sections/location/Location';
-import { Faq } from './ui/sections/faq/Faq';
-import { WeddingWitnesses } from './ui/sections/weddingWitnesses/WeddingWitnesses';
-import { Memories } from './ui/sections/memories/Memories';
-import { Rsvp } from './ui/sections/rsvp/Rsvp';
-import { Toaster } from 'react-hot-toast';
-import emailjs from "emailjs-com";
-import { isMobile } from './util/isMobile';
-import { Tables } from './ui/sections/tables/Tables';
+import { lightTheme } from './ui/theme/theme';
+import { ThemeProvider } from '@emotion/react';
+import { AppContent } from './ui/AppContent';
 
-export const USER_ID = 'KvoQmT_FIJQvcZXYN'
-
-function App() {
-
+const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
 
@@ -28,39 +17,11 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleThemeChange = (newTheme: string) => {
-    document.documentElement.setAttribute("data-theme", newTheme); // Set data-theme on <html>
-  };
-
-  useEffect(() => {
-    handleThemeChange("pantone")
-    emailjs.init(USER_ID);
-  }, [])
-
   return (
-    <div className="App">
-      <div className="flex flex-col">
-        {/* <Navigation /> */}
-        <Title />
-        <Location />
-        <Faq />
-        <WeddingWitnesses />
-        <Memories />
-        <Rsvp />
-        {/* <Tables /> */}
-
-        <Toaster />
-      </div>
-    </div>
+    <ThemeProvider theme={lightTheme}>
+      <AppContent />
+    </ThemeProvider>
   );
-}
-
-export const openUrl = (url: string, withBlank: boolean = true) => {
-  if (isMobile()) {
-    window.open(url)?.focus();
-  } else {
-    window.open(url, withBlank ? '_blank' : '')?.focus();
-  }
-}
+};
 
 export default App;

@@ -3,7 +3,11 @@
         "names": "Dorota i Szymon",
         "date": "12 Lipca 2025",
         "calendarEventName": "Ślub i wesele Doroty i Szymona",
-        "addEventToCalendar": "Dodaj do kalendarza"
+        "addEventToCalendar": "Dodaj do kalendarza",
+        "days": "dni",
+        "hours": "godz",
+        "minutes": "mins",
+        "seconds": "sek"
     },
     "location": {
         "title": "Przywidz, Zielona Brama",
@@ -11,7 +15,74 @@
         "description1": "Nasza ceremonia zaślubin odbędzie się pod chmurką, tuż obok sali weselnej.",
         "description2": "Po ceremonii serdecznie zapraszamy Was na przyjęcie weselne, które odbędzie się w Sali Sopockiej tuż obok! 🥂🎶",
         "seeOnMap": "Zobacz na mapie",
-        "parking": "Parking"
+        "parkingButton": "Parking",
+        "close": "Zamknij",
+        "parking": {
+            "title": "Parking",
+            "description": "Na terenie Zielonej Bramy jest kilka",
+            "free": "darmowych",
+            "descriptionContinued": "parkingów, na pewno znajdziecie dla siebie miejsce!",
+            "clickToOpenMap": "Kliknij na zdjęcie, żeby otworzyć mapę.",
+            "mapAlt": "Mapa parkingu"
+        }
+    },
+    "schedule": {
+        "title": "Harmonogram",
+        "description": "Całe wydarzenie będzie raczej zmieniało się na bieżąco, ale przedstawiamy Wam orientacyjny harmonogram ślubu i wesela. Najważniejsze, żębyśmy się wszyscy dobrze bawili, więc spędźcie ten czas w swoim własnym tempie 😊",
+        "scheduleEvent1": "Ceremonia",
+        "scheduleEvent2": "Życzenia",
+        "scheduleEvent3": "Obiad",
+        "scheduleEvent4": "Tort",
+        "scheduleEvent5": "Pierwszy taniec",
+        "scheduleEvent6": "Sesja zdjęciowa",
+        "scheduleEvent7": "Atrakcja niespodzianka",
+        "scheduleEvent8": "Kolacja I",
+        "scheduleEvent9": "Oczepiny",
+        "scheduleEvent10": "Kolacja II"
+    },
+    "menu": {
+        "title": "Menu",
+        "seeDetails": "Zobacz szczegóły",
+        "soup": {
+            "title": "Zupa",
+            "description": "<i>Serwowana w wazach</i>\n• Rosół potrójny z domowym makaronem\n• Kremowa zupa z pieczonych warzyw z pestkami słonecznika"
+        },
+        "mainCourse": {
+            "title": "Drugie danie",
+            "description": "<i>Podawane na półmiskach</i>\n• Konfitowane udko z kaczki (sos śliwkowy)\n• Zraz pałacowy (sos grzybowy)\n• Królewski Kotlet de volaille 👑\n• Pierś indycza pieczona w żurawinach i jabłkach\n• Curry indyjskie warzywne z ciecierzycą/chlebek naan 🥗\n<i>Dodatki:</i>\n• Ziemniaki gotowane z koperkiem\n• kluski śląskie\n• ryż basmati\n• krucha kapusta czerwona/granat/ogórek/papryka/szczypiorek z sosem vineegret/buraczki"
+        },
+        "supper1": {
+            "title": "Kolacja I",
+            "description": "Gulasz tajski\n<i>Dodatki:</i>\n• ryż\n• lekka sałatka: kapusta biała/por/kukurydza/marynata na bazie limonki"
+        },
+        "supper2": {
+            "title": "Kolacja II",
+            "description": "Barszczyk z pasztetkiem"
+        },
+        "drinks": {
+            "title": "Napoje",
+            "description": "• Kawa\n• Herbata\n• Woda z cytryną i miętą\n• Soki\n• Lemoniada cytrusowa\n• Coca-Cola\n• Coca-Cola Zero\n• Sprite\n• Tonic\n\n<i>Alkohole</i>\n• Wódka - Ogiński\n• Whisky - Jameson\n• Gin - Bombay Sapphire\n• Jaggermeister\n• Martini Bianco\n• Wino Białe - Octavo De Arte (Chardonnay)\n• Wino Czerwone - Octavo De Arte (Cabarnet Sauvignon)"
+        },
+        "sweetBuffet": {
+            "title": "Słodki bufet 🥗",
+            "description": "• Musy w monoporcjach malinowy/ mango/ czekoladowy\n• Tartaletki z kremem i owocami\n• Mini bezy Pavlova/\n• Mini szarlotki\n• Tiramisu w pucharkach\n• Mocno czekoladowe brownie z orzechami\n• Sernik z polewą czekoladową\n• Sernik na zimno z owocami\n• Owoce sezonowe"
+        },
+        "polishBuffet": {
+            "title": "Bufet Polskich Wędin",
+            "description": "• Szynka tradycyjna z tłuszczykiem\n• Kumpiak podlaski\n• Schab delikatnie wędzony dymem olchowym\n• Karczek wędzony\n• Szynka dojrzewająca\n• Suszona kiełbaska polska\n• Kiełbasa krucha\n• Kindziuk litewski\n• sosy : tatarski, chrzanowy, sriracha, salsa verde\n• marynowane pieczarki, octowe węgierki, korniszony, ogórki kiszone, konfitura z czerwonej\n• cebuli\n• Wiejskie pieczywo, masło"
+        },
+        "meatBuffet": {
+            "title": "Bufet Mięs pieczystych",
+            "description": "• Schab pieczony w tymianku i suszonych morelach\n• Karczek w majeranku i suszonych pomidorach\n• Boczek aromatyczny w ziołach\n• Wołowina długo pieczona\n• Biała kiełbasa wolno pieczona w ziołach i piwie\n• Tatarki wołowe\n• Pasztet myśliwski\n• Smalec ze skwarkami\n• Marynaty: marynowane węgierki, chrzan, ćwikła z chrzanem\n• sosy : tatarski, chrzanowy, sriracha, salsa verde"
+        },
+        "saladBuffet": {
+            "title": "Bufet Sałatkowy 🥗",
+            "description": "• <i>Sałatka nicejska</i> (Sałata rzymska/sałata lodow/ pomidorki cherry/ tuńczyk/ fasolka szparagowa/ ziemniaczki gotowane/czerwona cebulka/ oliwki zielone i czarne/ kapary/ sos winegret)\n\n• <i>Sałatka letnia</i> (Sałata lodowa/ rukola/ młody szpinak/ mini pomidorki/ zielony ogórek/ oliwki zielone i czarne/ karczoch/ zielona cebulka/feta/ crostini/ sezam biały i czarny/ pestki słonecznika Sosy: winegret, jogurtowo- czosnkowy)\n\n• <i>Sałatka ze słonecznej Italii</i> (Młody szpinak/ rukola/mix sałat/ mandarynki/ pomarańcze/ granat/ sos winegret)\n\n• <i>Kisir śródziemnomorski</i> (Kasza bulgur/ cebula dymka/ koperek/ natka pietruszki/ pomidory/zielona papryka/ oliwka/ ekstrakt z granatu/ koncentrat z papryki/ sałata rzymska/ sok z cytryny/ kumin)\n\n• <i>Lekka sałatka z ziemniaczków pieczonych we włoskim stylu</i> (Ziemniaczki pieczone/żółta fasolka szparagowa/czerwona cebula/ suszone pomidory w oleju/zielona pietruszka/ kapary/ sos na bazie czerwonego octu winnego)\n\n• <i>Sałatka z buraków z kozim serem w malinowym winegrecie</i> (Buraczki gotowane/ kozi ser/ orzechy/ malinowy winegret)"
+        },
+        "varietyBuffet": {
+            "title": "Bufet Różnorodności 🥗",
+            "description": "• Tatar z suszonych pomidorów i cukinii/ bakłażana\n• Tatarki z marynowanego łososia\n• Tartaletki wytrawne z kolorowymi pastami\n• Wybór ryb wędzonych\n• Krewetki z mango\n• Krewetki z melonem i szynką parmeńską\n• Deska serów włoskich i lokalnych z owocami, orzechami i grissini\n• Śledziki marynowane w brzoskwiniach i żurawinie z oliwką\n• Śledziki w gęstym pomidorowo- paprykowym sosie z warzywami\n• Hummus tradycyjny\n• Sosy: kaparowy, winno- koperkowy, jogurtowo- czosnkowy"
+        }
     },
     "faq": {
         "title": "Więcej informacji"
@@ -38,6 +109,8 @@
         "message": "Wiadomość, dieta, informacje o dzieciach i noclegu. W przypadku chęci noclegu, podaj również numer telefonu",
         "formNotFilledError": "Proszę wypełnić wszystkie pola formularza.",
         "send": "Wyślij",
-        "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋"
-    }
+        "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋",
+        "closed": "RSVP jest już zamknięte. Do zobaczenia na weselu!"
+    },
+    "navigate": "Nawiguj"
 }

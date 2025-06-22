@@ -18,6 +18,6 @@ export const MainConfig = {
     },
     rsvp: {
         firstPhoneNumber: '880 491 301',
-        secondPhoneNumber: '665 123 549' 
+        secondPhoneNumber: '665 123 549'
     }
 }

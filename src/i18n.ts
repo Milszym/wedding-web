@@ -6,7 +6,7 @@ import translation_pl from "./locales/pl/translation.json";
 
 const resources = {
   en: {
-      translation: translation_en
+    translation: translation_en
   },
   pl: {
     translation: translation_pl
@@ -14,8 +14,8 @@ const resources = {
 };
 
 i18n
-  .use(LanguageDetector) // Bind react-i18next
-  .use(initReactI18next) // Bind react-i18next
+  .use(LanguageDetector) 
+  .use(initReactI18next)
   .init({
     resources,
     fallbackLng: "pl", // Default language
