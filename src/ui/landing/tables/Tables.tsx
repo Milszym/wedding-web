@@ -14,6 +14,7 @@ import {alpha} from "@mui/material/styles";
 
 // @ts-ignore
 const UNKNOWN_TABLE_NAME = "?"
+export const TABLES_ID = "tables"
 
 const TablesContentStyle = withMyTheme(() => css`
     display: flex;
@@ -94,7 +95,7 @@ const TableNameStyle = withMyTheme((theme) => css`
     font-family: ${theme.typography.h1.fontFamily};
     left: 0;
     right: 0;
-    top: 50%;
+    top: 5%;
     transform: translateY(-50%);
     text-align: center;
     ${mobileCss(`
@@ -104,7 +105,6 @@ const TableNameStyle = withMyTheme((theme) => css`
 
 const TableNameUnknownStyle = withMyTheme(() => css`
     opacity: 0.5;
-    top: -5%;
     font-size: clamp(3.5rem, 7vw, 5rem);
 `)
 
@@ -128,13 +128,12 @@ export const Tables = () => {
 
     const [tableName, setTableName] = useState(UNKNOWN_TABLE_NAME)
     const [who, setWho] = useState('')
+    const [lastRequestedWho, setLastRequestedWho] = useState('')
     const [loading, setLoading] = useState(false)
 
-
     const searchTable = async () => {
-        searchFunnyRandomName()
-        // enable once backend is ready
-        // await searchTableApi()
+        // searchFunnyRandomName()
+        await searchTableApi()
     }
 
     const searchFunnyRandomName = () => {
@@ -148,6 +147,7 @@ export const Tables = () => {
             if (!validate()) {
                 return
             }
+            setLastRequestedWho(who)
             setLoading(true)
             const response = await checkTable(who);
             if (response.status == 404) {
@@ -155,7 +155,7 @@ export const Tables = () => {
             } else {
                 const body = await response.json()
                 console.log('Successfully checked table', response.status, response.text, body);
-                setTableName(body.tableName)
+                setTableName(body.tableNumber)
             }
         } catch (error) {
             showTableError(error)
@@ -171,7 +171,7 @@ export const Tables = () => {
     }
 
     const validate = () => {
-        if (who === '') {
+        if (who === '' || lastRequestedWho === who || loading) {
             return false
         }
         return true
@@ -183,7 +183,7 @@ export const Tables = () => {
     }
 
     return <section
-        id="tables"
+        id={TABLES_ID}
         css={TablesContentStyle}>
         <div css={TablesTitleStyle}>{t('tables.title')}</div>
         <br/>
@@ -197,9 +197,8 @@ export const Tables = () => {
                      value={who}
                      additionalCss={TablesInputTextStyle}/>
         </div>
-        <MyButton text={t('tables.search')} variant={"contained"} additionalCss={TablesButton} enabled={validate()}
+            <MyButton text={t('tables.search')} variant={"contained"} additionalCss={TablesButton} enabled={validate()}
                   onClick={searchTable}/>
-
         <br/>
         <div css={TableResultStyle}>
             <div css={[TableNameStyle, tableName === UNKNOWN_TABLE_NAME ? TableNameUnknownStyle : null]}>

@@ -12,6 +12,8 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import { Fullscreen } from "../../components/Fullscreen"
 import {openUrl} from "../../util/openUrl";
 
+export const TITLE_ID = "title"
+
 const TitleContainerStyle = withMyTheme((theme: Theme) => css`
     text-align: center;
     display: flex;
@@ -172,7 +174,21 @@ export const Title = () => {
     const imagePath = isMobile ? '/images/zdjecie_z_wesela_cropped.jpg' : '/images/title_a_cropped.jpg'
 
     return (
-        <Fullscreen additionalCss={TitleContainerStyle}>
+        <Fullscreen id={TITLE_ID} additionalCss={TitleContainerStyle}>
+            {/* Invisible observer for FloatingButtons */}
+            <div 
+                id="title-observer"
+                style={{ 
+                    position: 'absolute', 
+                    top: '50vh', 
+                    left: 0, 
+                    width: '1px', 
+                    height: '1px', 
+                    pointerEvents: 'none',
+                    zIndex: -1
+                }} 
+            />
+            
             <img css={BackgroundImageStyle} src={imagePath} alt="Wedding background" />
             <div css={OverlayStyle} />
             <div css={ContentWrapperStyle}>

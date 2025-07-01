@@ -19,6 +19,12 @@ const ButtonPrimaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => cs
             background-color: rgba(196, 85, 38, 0.04);
             border-color: ${theme.palette.primary.main};
         }
+
+        &.Mui-disabled {
+            border-color: ${theme.palette.action.disabled};
+            color: ${theme.palette.action.disabled};
+            background-color: transparent;
+        }
     }
 
     &.MuiButton-contained {
@@ -28,6 +34,25 @@ const ButtonPrimaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => cs
 
         &:hover {
             background-color: ${theme.palette.primary.main};
+        }
+
+        &.Mui-disabled {
+            background-color: ${theme.palette.action.disabledBackground};
+            color: ${theme.palette.action.disabled};
+            box-shadow: none;
+        }
+    }
+
+    &.MuiButton-text {
+        color: ${theme.palette.primary.main};
+
+        &:hover {
+            background-color: rgba(196, 85, 38, 0.04);
+        }
+
+        &.Mui-disabled {
+            color: ${theme.palette.action.disabled};
+            background-color: transparent;
         }
     }
 
@@ -48,6 +73,12 @@ const ButtonSecondaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => 
         &:hover {
             border-color: ${theme.palette.secondary.light};
         }
+
+        &.Mui-disabled {
+            border-color: ${theme.palette.action.disabled};
+            color: ${theme.palette.action.disabled};
+            background-color: transparent;
+        }
     }
 
     &.MuiButton-contained {
@@ -57,6 +88,25 @@ const ButtonSecondaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => 
 
         &:hover {
             background-color: ${theme.palette.secondary.light};
+        }
+
+        &.Mui-disabled {
+            background-color: ${theme.palette.action.disabledBackground};
+            color: ${theme.palette.action.disabled};
+            box-shadow: none;
+        }
+    }
+
+    &.MuiButton-text {
+        color: ${theme.palette.secondary.main};
+
+        &:hover {
+            background-color: rgba(25, 118, 210, 0.04);
+        }
+
+        &.Mui-disabled {
+            color: ${theme.palette.action.disabled};
+            background-color: transparent;
         }
     }
 
@@ -83,6 +133,7 @@ export const MyButton = (
         onClick,
         additionalCss,
         startIcon,
+        enabled = true,
         type = "button", // Default type is "button"
         ...props // Spread operator to capture all other props
     }: MyButtonProps
@@ -96,6 +147,7 @@ export const MyButton = (
             color={colorVariant}
             variant={variant}
             startIcon={startIcon}
+            disabled={!enabled}
             type={type}
             {...props}
         >

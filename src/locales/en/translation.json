@@ -30,11 +30,11 @@
     "title": "Schedule",
     "description": "The whole event will change as we go, but we present you with an approximate schedule of the wedding and reception. The most important thing is that we all have a good time, so spend this time at your own pace 😊",
     "scheduleEvent1": "Ceremony",
-    "scheduleEvent2": "Wishes",
+    "scheduleEvent2": "Wishes and group photo",
     "scheduleEvent3": "Dinner",
-    "scheduleEvent4": "Cake",
-    "scheduleEvent5": "First Dance",
-    "scheduleEvent6": "Photo Session",
+    "scheduleEvent4": "Photo session with guests",
+    "scheduleEvent5": "Wedding Cake",
+    "scheduleEvent6": "First Dance",
     "scheduleEvent7": "Surprise Attraction",
     "scheduleEvent8": "Supper I",
     "scheduleEvent9": "Oczepiny",
@@ -52,7 +52,7 @@
       "description": "<i>Served on platters</i>\n• Duck leg confit with plum sauce\n• Palace stuffed pork roll with mushroom sauce\n• King of côtelettes - de volaille 👑\n• Turkey breast roasted with cranberries and apples\n• Indian vegetable curry with chickpeas and naan bread 🥗\n<i>Sides:</i>\n• Boiled potatoes with dill\n• Silesian dumplings\n• Basmati rice\n• Tender red cabbage with pomegranate, cucumber, pepper, chives in vinaigrette sauce and beetroot"
     },
     "supper1": {
-      "title": "Supper I ~10:00 PM",
+      "title": "Supper I ~10:15 PM",
       "description": "Tuscan goulash\n<i>Sides:</i>\n• Rice\n• Light salad: white cabbage, leek, corn with lime-based marinade"
     },
     "supper2": {
@@ -100,25 +100,25 @@
   },
   "rsvp": {
     "title": "RSVP",
-    "description1": "Prosimy o potwierdzenie swojej obecności na weselu wraz z informacją o tym czy zabieracie ze sobą swoje dzieci i czy chcecie skorzystać z noclegu.",
-    "description2": "Nie możemy się już doczekać aż spędzimy z Wami ten wyjątkowy dzień!",
+    "description1": "Please confirm your attendance at the wedding along with information about whether you are bringing your children and whether you would like to use accommodation.",
+    "description2": "We can't wait to spend this special day with you!",
     "firstName": "Dorota",
     "secondName": "Szymon",
-    "who": "Kto?",
+    "who": "Who?",
     "email": "Email",
-    "message": "Wiadomość, dieta, informacje o dzieciach i noclegu",
-    "formNotFilledError": "Proszę wypełnić wszystkie pola formularza.",
-    "send": "Wyślij",
-    "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋",
+    "message": "Message, diet, information about children and accommodation",
+    "formNotFilledError": "Please fill in all form fields.",
+    "send": "Send",
+    "thankYou": "Thank you! 😊 <br />See you soon! 👋",
     "closed": "RSVP is now closed. We look forward to seeing you at the wedding!"
   },
   "tables": {
-    "title": "Stoły",
-    "description": "Wpisz swoje dokładne imię i nazwisko i wyszukaj swój stół.",
-    "who": "Kto?",
-    "search": "Wyszukaj stół",
-    "tableNotFound": "Nie znaleziono stołu, upewnij się, że wpisałeś poprawne imię i nazwisko.",
-    "formNotFilledError": "Wpisz proszę imie i nazwisko :)."
+    "title": "Tables",
+    "description": "Enter your exact first and last name and find your table.",
+    "who": "Who?",
+    "search": "Find table",
+    "tableNotFound": "Table not found, make sure you entered the correct first and last name.",
+    "formNotFilledError": "Please enter your first and last name :)."
   },
   "navigate": "Navigate"
 }

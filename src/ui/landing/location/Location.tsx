@@ -6,6 +6,8 @@ import { MainConfig } from "../../../config/MainConfig"
 import { useEffect, useState } from "react"
 import { openUrl } from "../../util/openUrl"
 
+export const LOCATION_ID = "location"
+
 export const Location = () => {
     const { t } = useTranslation()
     const [isMobile, setIsMobile] = useState(false)

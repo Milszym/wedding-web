@@ -30,11 +30,11 @@
         "title": "Harmonogram",
         "description": "Całe wydarzenie będzie raczej zmieniało się na bieżąco, ale przedstawiamy Wam orientacyjny harmonogram ślubu i wesela. Najważniejsze, żębyśmy się wszyscy dobrze bawili, więc spędźcie ten czas w swoim własnym tempie 😊",
         "scheduleEvent1": "Ceremonia",
-        "scheduleEvent2": "Życzenia",
+        "scheduleEvent2": "Życzenia i zdjęcie grupowe",
         "scheduleEvent3": "Obiad",
-        "scheduleEvent4": "Tort",
-        "scheduleEvent5": "Pierwszy taniec",
-        "scheduleEvent6": "Sesja zdjęciowa",
+        "scheduleEvent4": "Sesja zdjęciowa z goścmi",
+        "scheduleEvent5": "Tort",
+        "scheduleEvent6": "Pierwszy taniec",
         "scheduleEvent7": "Atrakcja niespodzianka",
         "scheduleEvent8": "Kolacja I",
         "scheduleEvent9": "Oczepiny",
@@ -52,7 +52,7 @@
             "description": "<i>Podawane na półmiskach</i>\n• Konfitowane udko z kaczki (sos śliwkowy)\n• Zraz pałacowy (sos grzybowy)\n• Królewski Kotlet de volaille 👑\n• Pierś indycza pieczona w żurawinach i jabłkach\n• Curry indyjskie warzywne z ciecierzycą/chlebek naan 🥗\n<i>Dodatki:</i>\n• Ziemniaki gotowane z koperkiem\n• kluski śląskie\n• ryż basmati\n• krucha kapusta czerwona/granat/ogórek/papryka/szczypiorek z sosem vineegret/buraczki"
         },
         "supper1": {
-            "title": "Kolacja I ~22:00",
+            "title": "Kolacja I ~22:15",
             "description": "Gulasz tajski\n<i>Dodatki:</i>\n• ryż\n• lekka sałatka: kapusta biała/por/kukurydza/marynata na bazie limonki"
         },
         "supper2": {
@@ -111,6 +111,14 @@
         "send": "Wyślij",
         "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋",
         "closed": "RSVP jest już zamknięte. Do zobaczenia na weselu!"
+    },
+    "tables": {
+        "title": "Stoły",
+        "description": "Wpisz swoje dokładne imię i nazwisko i wyszukaj swój stół.",
+        "who": "Kto?",
+        "search": "Wyszukaj stół",
+        "tableNotFound": "Nie znaleziono stołu, upewnij się, że wpisałeś poprawne imię i nazwisko.",
+        "formNotFilledError": "Wpisz proszę imie i nazwisko :)."
     },
     "navigate": "Nawiguj"
 }

@@ -19,8 +19,8 @@ export const AppContent = () => {
         <WeddingWitnesses/>
         <Memories/>
         <Rsvp/>
-        {/* <Tables/> */}
-        {/* <Schedule/> */}
+        <Tables/>
+        <Schedule/>
         <Menu />
 
         <FloatingButtons />

@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import {JSX, useState} from "react";
-import {navigateToMap, navigateToZielonaBrama} from "../Location"
+import {LOCATION_ID, navigateToMap, navigateToZielonaBrama} from "../Location"
 import {useInView} from "react-intersection-observer";
 import {ParkingDialog} from "../ParkingDialog";
 import {useTranslation} from "react-i18next";
@@ -124,7 +124,7 @@ export const LocationDesktop = ({description}: LocationDesktopProps) => {
     });
 
     return (
-        <section id="location" css={LocationContentStyle}>
+        <section id={LOCATION_ID} css={LocationContentStyle}>
             <div css={LocationImagesStyle}>
                 <img
                     ref={ref}

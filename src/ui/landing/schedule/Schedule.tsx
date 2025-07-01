@@ -15,6 +15,7 @@ import {
     Celebration,
     Fastfood,
 } from "@mui/icons-material"
+import { Fullscreen } from "../../components/Fullscreen"
 
 export const SCHEDULE_ID = "schedule"
 
@@ -51,13 +52,13 @@ const ScheduleDescriptionStyle = withMyTheme((theme) => css`
     font-family: ${theme.typography.body1.fontFamily};
     color: ${theme.palette.text.primary};
     text-align: center;
-    max-width: 800px;
+    max-width: 75vw;
     line-height: 1.6;
     margin-bottom: 3rem;
     ${mobileCss(`
         font-size: 1.1rem;
         margin-bottom: 2rem;
-        max-width: 100%;
+        max-width: 85vw;
     `)}
 `)
 
@@ -162,18 +163,18 @@ export const Schedule = () => {
     const scheduleItems = [
         { time: "16:30", event: t('schedule.scheduleEvent1'), icon: <Church /> },
         { time: "17:00", event: t('schedule.scheduleEvent2'), icon: <CardGiftcard /> },
-        { time: "17:45", event: t('schedule.scheduleEvent3'), icon: <Restaurant /> },
-        { time: "18:30", event: t('schedule.scheduleEvent4'), icon: <Cake /> },
-        { time: "19:00", event: t('schedule.scheduleEvent5'), icon: <MusicNote /> },
-        { time: "20:00", event: t('schedule.scheduleEvent6'), icon: <PhotoCamera /> },
+        { time: "18:15", event: t('schedule.scheduleEvent3'), icon: <Restaurant /> },
+        { time: "19:00", event: t('schedule.scheduleEvent4'), icon: <Cake /> },
+        { time: "20:00", event: t('schedule.scheduleEvent5'), icon: <MusicNote /> },
+        { time: "20:15", event: t('schedule.scheduleEvent6'), icon: <PhotoCamera /> },
         { time: "21:00", event: t('schedule.scheduleEvent7'), icon: <AutoAwesome /> },
-        { time: "22:00", event: t('schedule.scheduleEvent8'), icon: <LocalDining /> },
+        { time: "22:15", event: t('schedule.scheduleEvent8'), icon: <LocalDining /> },
         { time: "00:00", event: t('schedule.scheduleEvent9'), icon: <Celebration /> },
         { time: "01:00", event: t('schedule.scheduleEvent10'), icon: <Fastfood /> }
     ]
 
     return (
-        <div id={SCHEDULE_ID} css={ScheduleContentStyle}>
+        <section id={SCHEDULE_ID} css={ScheduleContentStyle}>
             <div css={ScheduleTitleStyle}>
                 {t('schedule.title')}
             </div>
@@ -190,6 +191,6 @@ export const Schedule = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     )
 }

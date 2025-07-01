@@ -33,6 +33,7 @@ const MenuContentStyle = withMyTheme((theme) => css`
     color: ${theme.palette.text.primary};
     ${mobileCss(`
         height: auto;
+        width: 100vw;
     `)}
 `)
 
@@ -60,7 +61,6 @@ const MenuGridStyle = withMyTheme(() => css`
     ${mobileCss(`
         gap: 0.5rem;
         height: auto;
-        width: 85vw;
         margin-bottom: 5vh;
         overflow-y: visible;
         flex-wrap: no-wrap;
@@ -298,7 +298,7 @@ export const Menu = () => {
     ]
 
     return (
-        <div id={MENU_ID} css={MenuContentStyle}>
+        <section id={MENU_ID} css={MenuContentStyle}>
             <div css={MenuTitleStyle}>
                 {t('menu.title')}
             </div>
@@ -335,6 +335,6 @@ export const Menu = () => {
                     </div>
                 </DialogContent>
             </Dialog>
-        </div>
+        </section>
     )
 }

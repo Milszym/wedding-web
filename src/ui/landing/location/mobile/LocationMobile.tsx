@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import {JSX, useState} from "react"
-import {navigateToMap, navigateToZielonaBrama} from "../Location"
+import {LOCATION_ID, navigateToMap, navigateToZielonaBrama} from "../Location"
 import {ParkingDialog} from "../ParkingDialog"
 import {useInView} from "react-intersection-observer"
 import {useTranslation} from "react-i18next"
@@ -122,7 +122,7 @@ export const LocationMobile = ({ description }: LocationMobileProps) => {
     });
 
     return (
-        <section id="location" css={LocationMobileContentStyle}>
+        <section id={LOCATION_ID} css={LocationMobileContentStyle}>
             <div css={LocationMobileTitleStyle}>{t('location.title')}</div>
             <div css={LocationMobileSubtitleStyle}>{t('location.subtitle')}</div>
             <div css={LocationMobileDescriptionStyle}>{description}</div>

@@ -14,9 +14,8 @@ export const funnyWeddingTableNames: string[] = [
 ];
 
 export const LotteryText = ({ text }: LotteryTextProps) => {
-    const [displayedText, setDisplayedText] = useState(text);
+    const [displayedText, setDisplayedText] = useState('');
     const [revealed, setRevealed] = useState(false);
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   
     useEffect(() => {
       let interval: NodeJS.Timeout;
