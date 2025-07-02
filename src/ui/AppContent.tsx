@@ -9,6 +9,7 @@ import {Tables} from "./landing/tables/Tables";
 import { Schedule } from "./landing/schedule/Schedule";
 import { Menu } from "./landing/menu/Menu";
 import { FloatingButtons } from "./components/FloatingButtons";
+import { Attractions } from "./landing/attractions/Attractions";
 
 export const AppContent = () => {
     return <>
@@ -21,6 +22,7 @@ export const AppContent = () => {
         <Rsvp/>
         <Tables/>
         <Schedule/>
+        {/* <Attractions /> */}
         <Menu />
 
         <FloatingButtons />

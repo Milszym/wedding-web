@@ -120,5 +120,23 @@
     "tableNotFound": "Table not found, make sure you entered the correct first and last name.",
     "formNotFilledError": "Please enter your first and last name :)."
   },
+  "attractions": {
+    "title": "Wedding Attractions",
+    "quiz": {
+      "title": "Quiz  🧠",
+      "description": "We invite you to take part in the <b>Quiz</b> with prizes for the first three people!",
+      "button": "Quiz"
+    },
+    "bingo": {
+      "title": "Bingo  👀",
+      "description": "We invite you to take part in <b>Bingo</b> with prizes for the first two drawn people who mark one vertical or horizontal Bingo!",
+      "footer": "Bingo cards are on the table next to the tinctures and guest book."
+    },
+    "guestBook": {
+      "title": "Guest Book  📖",
+      "description": "We invite you to leave us an entry in the guest book. We encourage you to take photos, use stickers and all available accessories.",
+      "footer": "The Guest Book is next to the tinctures and Bingo Cards."
+    }
+  },
   "navigate": "Navigate"
 }

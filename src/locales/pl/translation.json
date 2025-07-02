@@ -120,5 +120,23 @@
         "tableNotFound": "Nie znaleziono stołu, upewnij się, że wpisałeś poprawne imię i nazwisko.",
         "formNotFilledError": "Wpisz proszę imie i nazwisko :)."
     },
+    "attractions": {
+        "title": "Atrakcje Weselne",
+        "quiz": {
+            "title": "Quiz  🧠",
+            "description": "Zapraszamy do wzięcia udziału w <b>Quizie</b> z nagrodami dla pierwszych trzech osób!",
+            "button": "Quiz"
+        },
+        "bingo": {
+            "title": "Bingo  👀",
+            "description": "Zapraszamy do wzięcia udziału w <b>Bingo</b> z nagrodami dla dwóch pierwszych wylosowanych osób które odznaczą jedno pionowe lub horyzontalne Bingo!",
+            "footer": "Karty do Bingo znajdują się na stole przy nalewkach i księdze gości."
+        },
+        "guestBook": {
+            "title": "Księga Gości  📖",
+            "description": "Zapraszamy do zostawienia nam wpisu w księdze gości. Zachęcamy do robienia zdjęć, używania naklejek i wszystkich dostępnych akcesoriów.",
+            "footer": "Księga Gości znajduje się przy nalewkach i przy Kartach do Bingo."
+        }
+    },
     "navigate": "Nawiguj"
 }
