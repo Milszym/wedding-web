@@ -22,7 +22,7 @@ export const AppContent = () => {
         <Rsvp/>
         <Tables/>
         <Schedule/>
-        {/* <Attractions /> */}
+        <Attractions />
         <Menu />
 
         <FloatingButtons />
