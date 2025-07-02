@@ -15,14 +15,12 @@ const AttractionsContentStyle = withMyTheme((theme) => css`
     align-items: center;
     justify-content: center;
     background-image: url('/images/peach_background_30.png');
-    padding: 5rem 0;
     min-height: 75vh;
-    width: 100%;
+    width: 100vw;
+    padding: 5rem 0;
     color: ${theme.palette.text.primary};
     ${mobileCss(css`
-        padding: 3rem 0;
         height: auto;
-        min-height: none;
     `)}
 `)
 
@@ -44,7 +42,6 @@ const AttractionsGridStyle = withMyTheme(() => css`
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    padding: 0 2rem;
     ${mobileCss(css`
         flex-direction: column;
         gap: 1.5rem;
@@ -55,14 +52,17 @@ const AttractionCardStyle = withMyTheme((theme) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
     background: ${theme.palette.background.paper};
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    max-width: 90vw;
+    width: 25vw;
+    padding: 2rem;
     text-align: center;
     gap: 1rem;
+   ${mobileCss(`
+        width: 75vw;
+        padding: 5vw;
+    `)}
 `)
 
 const AttractionCardTitleStyle = withMyTheme((theme) => css`
