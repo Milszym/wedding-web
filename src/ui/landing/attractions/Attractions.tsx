@@ -126,7 +126,7 @@ export const Attractions = () => {
     const { t } = useTranslation()
 
     const isQuizEnabled = () => {
-        const quizStartDate = new Date('2025-07-07')
+        const quizStartDate = new Date('2025-07-08')
         const currentDate = new Date()
         return currentDate >= quizStartDate
     }
