@@ -114,7 +114,7 @@ export const FloatingButtons = () => {
                 variant="contained"
                 colorVariant="primary"
                 startIcon={<Celebration />}
-                onClick={navigateToAttractions}
+                onClick={scrollToAttractions}
                 additionalCss={FloatingButtonStyle}
             />
             <MyButton
