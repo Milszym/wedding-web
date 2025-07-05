@@ -4,11 +4,12 @@ import { withMyTheme } from "../theme/theme"
 import { MyButton } from "./button/MyButton"
 import { isMobile, mobileCss } from "../theme/isMobile"
 import { useTranslation } from "react-i18next"
-import { Navigation, Restaurant, TableBar, FormatListNumbered } from "@mui/icons-material"
+import { Navigation, Restaurant, Celebration, TableBar, FormatListNumbered } from "@mui/icons-material"
 import { navigateToMap } from "../landing/location/Location"
 import { SCHEDULE_ID } from "../landing/schedule/Schedule"
 import { TABLES_ID } from "../landing/tables/Tables"
 import { MENU_ID } from "../landing/menu/Menu"
+import { ATTRACTIONS_ID } from "../landing/attractions/Attractions"
 import { useInView } from "react-intersection-observer"
 import { TITLE_ID } from "../landing/title/Title"
 import { useState, useEffect } from "react"
@@ -75,6 +76,10 @@ export const FloatingButtons = () => {
         scrollTo(SCHEDULE_ID)
     }
 
+    const scrollToAttractions = () => {
+        scrollTo('attractions')
+    }
+
     const scrollTo = (id: string) => {
         const menuElement = document.getElementById(id)
         if (menuElement) {
@@ -102,6 +107,14 @@ export const FloatingButtons = () => {
                 colorVariant="primary"
                 startIcon={<Navigation />}
                 onClick={navigateToMap}
+                additionalCss={FloatingButtonStyle}
+            />
+            <MyButton
+                text={t('attractions.title')}
+                variant="contained"
+                colorVariant="primary"
+                startIcon={<Celebration />}
+                onClick={navigateToAttractions}
                 additionalCss={FloatingButtonStyle}
             />
             <MyButton
