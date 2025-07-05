@@ -19,7 +19,7 @@ export const ceremonyFaqItems: FaqItem[] = [
     } as FaqItem,
     {
         title: 'Czy na ceremonii będą krzesełka?',
-        description: 'Prawdopodobnie będą, aczkolwiek w ograniczonej ilości! Prosimy o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej. Co do reszty krzesełek obowiązuje zasada kto pierwszy ten lepszy.'
+        description: 'Tak, będą aczkolwiek w ograniczonej ilości! Prosimy o zostawienie dwóch pierwszych rzędów dla rodziny Pary Młodej. Co do reszty krzesełek obowiązuje zasada kto pierwszy ten lepszy.'
     } as FaqItem,
     {
         title: 'Czy na miejscu jest parking?',
@@ -38,7 +38,7 @@ export const ceremonyFaqItems: FaqItem[] = [
 export const weddingFaqItems: FaqItem[] = [
     {
         title: 'Czy będzie menu vegańskie?',
-        description: 'Oczywiście, ale potrzebujemy informacje o chęci skorzystania z tej opcji, więc koniecznie daj nam o tym znać!'
+        description: 'Oczywiście, ale potrzebujemy informacje o chęci skorzystania z tej opcji, więc koniecznie daj nam o tym znać! Będzie to curry podane do nakładania podczas obiadu oraz wegetariańskie bufety.'
     } as FaqItem,
     {
         title: 'Czy obok sali jest przestrzeń dla gości na świeżym powietrzu?',
@@ -49,16 +49,8 @@ export const weddingFaqItems: FaqItem[] = [
         description: 'Spodziewaj się wszystkiego po trochu, aczkolwiek Disco Polo u nas nie poleci.'
     } as FaqItem,
     {
-        title: 'Czy można gdzieś zobaczyć menu weselne?',
-        description: 'Jeszcze nie, ale już niedługo pojawi się na stronie!'
-    } as FaqItem,
-    {
-        title: 'Czy jest gdzieś rozpiska stolików?',
-        description: 'Jeszcze nie, ale już niedługo pojawi się na stronie!'
-    } as FaqItem,
-    {
-        title: 'Czy jest gdzieś harmonogram wydarzenia?',
-        description: 'Jeszcze nie, ale już niedługo pojawi się na stronie!'
+        title: 'Czy będą jakieś atrakcje?',
+        description: 'Tak, będą nalewki, księga gości z Instaxem, lustro do zdjęć oraz atrakcja niespodzianka około 21:00!'
     } as FaqItem,
 ]
 
