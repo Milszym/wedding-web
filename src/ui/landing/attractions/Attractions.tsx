@@ -7,6 +7,8 @@ import { MyButton } from "../../components/button/MyButton"
 import { MainConfig } from "../../../config/MainConfig"
 import { openUrl } from "../../util/openUrl"
 
+export const ATTRACTIONS_ID = 'attractions'
+
 const AttractionsContentStyle = withMyTheme((theme) => css`
     display: flex;
     flex-direction: column;
@@ -152,7 +154,7 @@ export const Attractions = () => {
     ]
 
     return (
-        <section id="attractions" css={AttractionsContentStyle}>
+        <section id={ATTRACTIONS_ID} css={AttractionsContentStyle}>
             <h2 css={AttractionsTitleStyle}>{t('attractions.title')}</h2>
             <div css={AttractionsGridStyle}>
                 {attractions.map((attraction, index) => (
