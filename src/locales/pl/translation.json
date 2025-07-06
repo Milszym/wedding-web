@@ -124,12 +124,12 @@
         "title": "Atrakcje",
         "quiz": {
             "title": "Quiz  🧠",
-            "description": "Zapraszamy do wzięcia udziału w <b>Quizie</b> z nagrodami dla pierwszych trzech osób! Quiz odblokuje się 7 lipca 2025 roku.",
+            "description": "Zapraszamy do wzięcia udziału w <b>Quizie</b> z nagrodami dla pierwszych trzech osób! Quiz odblokuje się 7 lipca 2025 roku i będzie dostępny do 11 lipca godziny 23:59.",
             "button": "Quiz"
         },
         "bingo": {
             "title": "Bingo  👀",
-            "description": "Zapraszamy do wzięcia udziału w <b>Bingo</b> z nagrodami dla dwóch pierwszych wylosowanych osób które odznaczą jedno pionowe lub horyzontalne Bingo!",
+            "description": "Zapraszamy do wzięcia udziału w <b>Bingo</b> z nagrodami dla dwóch pierwszych wylosowanych osób które odznaczą jedno pionowe, poziome lub ukośne Bingo!",
             "footer": "Karty do Bingo znajdują się na stole przy nalewkach i księdze gości."
         },
         "guestBook": {
