@@ -21,6 +21,6 @@ export const MainConfig = {
         secondPhoneNumber: '665 123 549'
     },
     attractions: {
-        quizUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScPiu8hAxrlVvZuN8nCJ0uMv5wJlsjxld7ogJnUaihhW8xG3w/viewform?usp=header'
+        quizUrl: 'https://forms.gle/adWxJXjmWrUPEA5d7'
     }
 }
