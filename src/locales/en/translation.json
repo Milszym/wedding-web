@@ -124,12 +124,12 @@
     "title": "Attractions",
     "quiz": {
       "title": "Quiz  🧠",
-      "description": "We invite you to take part in the <b>Quiz</b> with prizes for the first three people! It's going to be available on 7th of July!",
+      "description": "We invite you to take part in the <b>Quiz</b> with prizes for the first three people! It's going to be available on 7th of July and is going to be available until 11th of July 23:59",
       "button": "Quiz"
     },
     "bingo": {
       "title": "Bingo  👀",
-      "description": "We invite you to take part in <b>Bingo</b> with prizes for the first two drawn people who mark one vertical or horizontal Bingo!",
+      "description": "We invite you to take part in <b>Bingo</b> with prizes for the first two drawn people who mark one vertical, slant or horizontal Bingo!",
       "footer": "Bingo cards are on the table next to the tinctures and guest book."
     },
     "guestBook": {
