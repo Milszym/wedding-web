@@ -11,9 +11,7 @@ import { TABLES_ID } from "../landing/tables/Tables"
 import { MENU_ID } from "../landing/menu/Menu"
 import { ATTRACTIONS_ID } from "../landing/attractions/Attractions"
 import { useInView } from "react-intersection-observer"
-import { TITLE_ID } from "../landing/title/Title"
 import { useState, useEffect } from "react"
-import { ATTRACTIONS_ID } from "../landing/attractions/Attractions"
 
 const FloatingButtonsContainerStyle = withMyTheme(() => css`
     position: fixed;
@@ -79,10 +77,6 @@ export const FloatingButtons = () => {
 
     const scrollToSchedule = () => {
         scrollTo(SCHEDULE_ID)
-    }
-
-    const scrollToAttractions = () => {
-        scrollTo('attractions')
     }
 
     const scrollTo = (id: string) => {
