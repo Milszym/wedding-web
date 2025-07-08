@@ -10,6 +10,7 @@ import { Schedule } from "./landing/schedule/Schedule";
 import { Menu } from "./landing/menu/Menu";
 import { FloatingButtons } from "./components/FloatingButtons";
 import { Attractions } from "./landing/attractions/Attractions";
+import { Accomodation } from "./landing/accomodation/Accomodation";
 
 export const AppContent = () => {
     return <>
@@ -23,6 +24,7 @@ export const AppContent = () => {
         <Tables/>
         <Schedule/>
         <Attractions />
+        <Accomodation />
         <Menu />
 
         <FloatingButtons />

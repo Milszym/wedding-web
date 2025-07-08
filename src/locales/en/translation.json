@@ -138,5 +138,16 @@
       "footer": "The Guest Book is next to the tinctures and Bingo Cards."
     }
   },
-  "navigate": "Navigate"
+  "navigate": "Navigate",
+  "accomodation": {
+    "title": "Accommodation",
+    "subtitle": "Information for guests staying overnight.",
+    "hotelInfo": "The hotel day starts at 3:00 PM and ends at 12:00 PM.\nIf you need more time, let us know!",
+    "smsInfo": "A day before or on the day of your stay, you will receive an SMS with your room code and information about which building your room is in. Below is a reference map of the buildings. In case you didn't receive the SMS, please go to the reception or call one of the following numbers:",
+    "mapAlt": "Reference map of the buildings",
+    "pierogarnia": "Pierogarnia",
+    "pensjonatStajnia": "Pensjonat Stajnia",
+    "dworek": "Dworek",
+    "salaWeselna": "Wedding Hall"
+  }
 }

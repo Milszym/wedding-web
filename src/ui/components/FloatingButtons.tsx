@@ -4,7 +4,7 @@ import { withMyTheme } from "../theme/theme"
 import { MyButton } from "./button/MyButton"
 import { isMobile, mobileCss } from "../theme/isMobile"
 import { useTranslation } from "react-i18next"
-import { Navigation, Restaurant, Celebration, TableBar, FormatListNumbered } from "@mui/icons-material"
+import { Navigation, Restaurant, Hotel, Celebration, TableBar, FormatListNumbered } from "@mui/icons-material"
 import { navigateToMap } from "../landing/location/Location"
 import { SCHEDULE_ID } from "../landing/schedule/Schedule"
 import { TABLES_ID } from "../landing/tables/Tables"
@@ -12,6 +12,7 @@ import { MENU_ID } from "../landing/menu/Menu"
 import { ATTRACTIONS_ID } from "../landing/attractions/Attractions"
 import { useInView } from "react-intersection-observer"
 import { useState, useEffect } from "react"
+import { ACCOMODATION_ID } from "../landing/accomodation/Accomodation"
 
 const FloatingButtonsContainerStyle = withMyTheme(() => css`
     position: fixed;
@@ -22,13 +23,7 @@ const FloatingButtonsContainerStyle = withMyTheme(() => css`
     gap: 10px;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    
-    /* Hide on desktop */
-    display: none;
-    
-    ${mobileCss(`
-        display: flex;
-    `)}
+    display: flex;
 `)
 
 const FloatingButtonStyle = withMyTheme(() => css`
@@ -41,7 +36,7 @@ const FloatingButtonStyle = withMyTheme(() => css`
 
 export const FloatingButtons = () => {
     const { t } = useTranslation()
-    const [isVisible, setIsVisible] = useState(isMobile())
+    const [isVisible, setIsVisible] = useState(true)
 
     // Observe title section
     const [titleRef, titleInView] = useInView({
@@ -58,8 +53,7 @@ export const FloatingButtons = () => {
     }, [titleRef])
 
     useEffect(() => {
-        // Only show buttons on mobile and when title is in view
-        const shouldBeVisible = isMobile() && titleInView
+        const shouldBeVisible = titleInView
         setIsVisible(shouldBeVisible)
     }, [titleInView])
 
@@ -69,6 +63,10 @@ export const FloatingButtons = () => {
 
     const scrollToTables = () => {
         scrollTo(TABLES_ID)
+    }
+
+    const scrollToAccomodation = () => {
+        scrollTo(ACCOMODATION_ID)
     }
 
     const scrollToAttractions = () => {
@@ -86,11 +84,6 @@ export const FloatingButtons = () => {
         }
     }
 
-    // Don't render anything if not on mobile
-    if (!isMobile()) {
-        return null
-    }
-
     return (
         <div css={[
             FloatingButtonsContainerStyle,
@@ -106,6 +99,14 @@ export const FloatingButtons = () => {
                 colorVariant="primary"
                 startIcon={<Navigation />}
                 onClick={navigateToMap}
+                additionalCss={FloatingButtonStyle}
+            />
+            <MyButton
+                text={t('accomodation.title')}
+                variant="contained"
+                colorVariant="primary"
+                startIcon={<Hotel />}
+                onClick={scrollToAccomodation}
                 additionalCss={FloatingButtonStyle}
             />
             <MyButton

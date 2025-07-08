@@ -138,5 +138,16 @@
             "footer": "Księga Gości znajduje się przy nalewkach i przy Kartach do Bingo."
         }
     },
-    "navigate": "Nawiguj"
+    "navigate": "Nawiguj",
+    "accomodation": {
+        "title": "Nocleg",
+        "subtitle": "Informacje dla nocujących.",
+        "hotelInfo": "Doba hotelowa zaczyna się o 15:00, a kończy o 12:00.\nJeżeli potrzebujecie więcej czasu, dajcie nam znać!",
+        "smsInfo": "Dzień przed lub w dniu noclegu otrzymacie SMSy z kodem do pokoju oraz informacją w jakim budynku znajduje się Wasz pokój. Poniżej poglądowa mapka budynków. Jeżeli nie otrzymałeś SMSa, prosimy o udanie się do recepcji lub kontakt z jednym z poniższych numerów:",
+        "mapAlt": "Poglądowa mapka budynków",
+        "pierogarnia": "Pierogarnia",
+        "pensjonatStajnia": "Pensjonat Stajnia",
+        "dworek": "Dworek",
+        "salaWeselna": "Sala weselna"
+    }
 }
