@@ -29,7 +29,7 @@ export const AppContent = () => {
     };
 
     return <>
-        {/* <CeremonyLocationDialog open={showDialog} onClose={handleCloseDialog} /> */}
+        <CeremonyLocationDialog open={showDialog} onClose={handleCloseDialog} />
         {/* <Navigation /> */}
         <Title/>
         <Location/>
