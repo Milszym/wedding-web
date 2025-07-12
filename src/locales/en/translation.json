@@ -82,6 +82,12 @@
     "varietyBuffet": {
       "title": "Variety Buffet 🥗",
       "description": "• Tartare of dried tomatoes and zucchini/eggplant\n• Tartare of marinated salmon\n• Savory tartlets with colorful spreads\n• Selection of smoked fish\n• Shrimps with mango\n• Shrimps with melon and Parma ham\n• Platter of Italian and local cheeses with fruits, nuts, and grissini\n• Marinated herring with peaches and cranberries with olives\n• Herring in thick tomato and bell pepper sauce with vegetables\n• Traditional hummus\n• Sauces: caper, wine-dill, yogurt-garlic"
+    },
+    "ceremonyDialog": {
+      "title": "Ceremony Location",
+      "description": "Due to the unfortunate weather condition, we have moved the location of the ceremony to the Orangery.",
+      "label": "Orangery",
+      "checkbox": "Do not show this message again"
     }
   },
   "faq": {

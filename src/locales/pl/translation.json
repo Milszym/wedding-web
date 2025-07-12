@@ -149,5 +149,11 @@
         "pensjonatStajnia": "Pensjonat Stajnia",
         "dworek": "Dworek",
         "salaWeselna": "Sala weselna"
+    },
+    "ceremonyDialog": {
+      "title": "Lokalizacja ceremonii",
+      "description": "Z uwagi na warunki pogodowe, lokalizacja ceremonii została zmieniona na Oranżerię.",
+      "label": "Oranżeria",
+      "checkbox": "Nie pokazuj tej wiadomości ponownie"
     }
 }

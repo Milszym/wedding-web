@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {Title} from "./landing/title/Title";
 import {Location} from "./landing/location/Location";
 import {Faq} from "./landing/faq/Faq";
@@ -11,9 +12,24 @@ import { Menu } from "./landing/menu/Menu";
 import { FloatingButtons } from "./components/FloatingButtons";
 import { Attractions } from "./landing/attractions/Attractions";
 import { Accomodation } from "./landing/accomodation/Accomodation";
+import { CeremonyLocationDialog } from "./landing/accomodation/CeremonyLocationDialog";
 
 export const AppContent = () => {
+    const [showDialog, setShowDialog] = useState(false);
+
+    useEffect(() => {
+        const show = localStorage.getItem('showCeremonyDialog');
+        if (show === null || show === 'true') {
+            setShowDialog(true);
+        }
+    }, []);
+
+    const handleCloseDialog = () => {
+        setShowDialog(false);
+    };
+
     return <>
+        {/* <CeremonyLocationDialog open={showDialog} onClose={handleCloseDialog} /> */}
         {/* <Navigation /> */}
         <Title/>
         <Location/>
